@@ -13,7 +13,7 @@ Shipwrecked, Salt and Science of Computer
 - 算法思想
 - [Algorithms in Sloving Classic Problems](Algorithms/Algorithms_in_Solving_Classic_Problems.md)
   - 图
-    - 岛屿问题/Number of Islands
+    - 岛屿问题/the Number of Islands
 - [算法题解](Algorithms/算法题解.md)
 
 ## Surger
