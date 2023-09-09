@@ -4,11 +4,11 @@
 
  [图](#图)
 
-- [岛屿问题/Number of Islands](#岛屿问题)
+- [岛屿问题/the Number of Islands](#岛屿问题)
 
 ## 图<a name="图"></a>
 
-### 岛屿问题/Number of Islands <a name="岛屿问题"></a>
+### 岛屿问题/the Number of Islands <a name="岛屿问题"></a>
 
 **核心思路**
 
