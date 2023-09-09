@@ -57,4 +57,8 @@ Return the number of islands present in the matrix.
 
 **习题**
 
-[算法题解：岛屿问题](算法题解-岛屿问题.md)
+- [算法题解：岛屿问题](算法题解-岛屿问题.md)
+
+**参考资料**
+
+- [Finding The Number of Islands](https://www.interviewbit.com/blog/number-of-islands/)
