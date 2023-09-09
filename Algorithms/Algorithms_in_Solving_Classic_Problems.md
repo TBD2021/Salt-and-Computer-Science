@@ -19,7 +19,10 @@ Return the number of islands present in the matrix.
 
 **EXAMPLE**
 
-INPUT:
-![岛屿问题1]（）
+**INPUT:**
+<div align=center>
+<img src="https://github.com/TBD2021/Salt-and-Computer-Science/blob/main/Algorithms/img/%E5%B2%9B%E5%B1%BF%E9%97%AE%E9%A2%981.jpg" width=300px>
+<div align=left>
 
+**OUTPUT:** 4
 
