@@ -9,7 +9,7 @@ Shipwrecked, Salt and Science of Computer
 ### 算法与数据结构/Algorithm and Data Structure
 
 - 算法的验证&效率分析
-- 数据结构
+- [数据结构](Algorithms/数据结构.md)
   - 树
 - 算法思想
 - [Algorithms in Sloving Classic Problems](Algorithms/Algorithms_in_Solving_Classic_Problems.md)
