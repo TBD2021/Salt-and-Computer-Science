@@ -2,15 +2,24 @@
 
  [图](#图)
 
+- [Flood Fill Algorithm](#Flood_Fill)
 - [岛屿问题/the Number of Islands](#岛屿问题)
 
 ## 图<a name="图"></a>
 
-### 岛屿问题/the Number of Islands <a name="岛屿问题"></a>
+### Flood Fill Algorithm <a name="Flood_Fill"></a>
+
+Flood fill, is a flooding algorithm that determines and alters the area connected to a given node in a multi-dimensional array with some matching attribute.
 
 **核心思路**
 
-  - 使用BFS/DFS遍历二维数组，这种方法也被称为Flood Fill Algorithm
+- 等同于图的遍历，DFS、BFS都可以
+
+|||
+|---|---|
+|||
+
+### 岛屿问题/the Number of Islands <a name="岛屿问题"></a>
 
 **问题背景**
 
@@ -25,7 +34,11 @@ Return the number of islands present in the matrix.
 > 
 >**Output:** 4
 
-**方法 1: DFS**
+**核心思路**
+
+- 使用BFS/DFS遍历二维数组，也就是Flood Fill Algorithm
+
+**方法 1：DFS**
 
 - **算法**
 
@@ -41,9 +54,9 @@ Return the number of islands present in the matrix.
   
   Space Complexity: O(M * N)
 
-**方法 2: BFS**
+**方法 2：BFS**
 
-- **算法:**
+- **算法**
 
 1. Scan the matrix from (0,0) till (N, M).
 2. If the current element is ‘1’, start a BFS.
@@ -52,7 +65,7 @@ Return the number of islands present in the matrix.
 5. The count is the total number of times the BFS has been invoked.
 6. Return count.
 
-- **复杂度:**
+- **复杂度**
   
   Time Complexity: O(M * N), where M and N is the size of the matrix
 
