@@ -27,31 +27,36 @@ Return the number of islands present in the matrix.
 
 **方法 1: DFS**
 
-- **算法:**
+- **算法**
 
-  - Scan the matrix from (0,0) to (N, M).
-  - If the current element is ‘1’, start a DFS.
-  - In the DFS traversal, mark every visited node.
-  - Count the number of islands as the number of nodes that trigger the DFS.
-  - Return count.
+1. Scan the matrix from (0,0) to (N, M).
+2. If the current element is ‘1’, start a DFS.
+3. In the DFS traversal, mark every visited node.
+4. Count the number of islands as the number of nodes that trigger the DFS.
+5. Return count.
 
-- **复杂度:**
-  - Time Complexity: O(M * N), where M and N are the size of the matrix
-  - Space Complexity: O(M * N).
+- **复杂度**
+
+  Time Complexity: O(M * N), where M and N are the size of the matrix
+  
+  Space Complexity: O(M * N)
 
 **方法 2: BFS**
 
 - **算法:**
-  - Scan the matrix from (0,0) till (N, M).
-  - If the current element is ‘1’, start a BFS.
-  - Consider a queue and put the current node into the queue.
-  - Iteratively visit its neighbours vertically and horizontally and mark them as visited.
-  - The count is the total number of times the BFS has been invoked.
-  - Return count.
+
+1. Scan the matrix from (0,0) till (N, M).
+2. If the current element is ‘1’, start a BFS.
+3. Consider a queue and put the current node into the queue.
+4. Iteratively visit its neighbours vertically and horizontally and mark them as visited.
+5. The count is the total number of times the BFS has been invoked.
+6. Return count.
 
 - **复杂度:**
-  - Time Complexity:O(M * N), where M and N is the size of the matrix
-  - Space Complexity:O(min(M,N)).
+  
+  Time Complexity: O(M * N), where M and N is the size of the matrix
+
+  Space Complexity: O(min(M,N))
 
 **习题**
 
