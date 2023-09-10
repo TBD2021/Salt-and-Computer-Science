@@ -13,13 +13,19 @@ Flood fill, is a flooding algorithm that determines and alters the area connecte
 
 **核心思路**
 
-- 就是图的遍历，DFS、BFS都可以
+- 就是图的遍历，使用DFS、BFS都可以
 
-|Four-way flood fill using a stack|Four-way flood fill using a queue|
+|<img src="https://github.com/TBD2021/Salt-and-Computer-Science/blob/main/Algorithms/img/floodfill1_animation_stack.gif" width=200px>|<img src="https://github.com/TBD2021/Salt-and-Computer-Science/blob/main/Algorithms/img/floodfill1_animation_queue.gif" width=200px>|
 |---|---|
-|<img src="https://github.com/TBD2021/Salt-and-Computer-Science/blob/main/Algorithms/img/%E5%B2%9B%E5%B1%BF%E9%97%AE%E9%A2%981.jpg" width=200px>|<img src="https://github.com/TBD2021/Salt-and-Computer-Science/blob/main/Algorithms/img/floodfill1_animation_queue.gif" width=200px>|
+|Four-way flood fill using a stack|Four-way flood fill using a queue|
 
+**习题**
 
+- [算法题解：Flood_Fill&岛屿问题](算法题解/算法题解-Flood_Fill&岛屿问题.md)
+
+**参考资料**
+
+- [Wikipedia: Flood fill](https://en.wikipedia.org/wiki/Flood_fill)
 
 ### 岛屿问题/the Number of Islands <a name="岛屿问题"></a>
 
