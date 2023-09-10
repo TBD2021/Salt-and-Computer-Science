@@ -5,7 +5,7 @@
 Shipwrecked, Salt and Science of Computer
 
 <details>
-<summery> In progress </summery>
+<summary> Later Updates </summary>
 - 同步数据结构目录
 </details>
 
