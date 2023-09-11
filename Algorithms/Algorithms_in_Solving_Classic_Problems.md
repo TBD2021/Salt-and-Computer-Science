@@ -3,6 +3,7 @@
 - [图](#图)
   - [Flood Fill Algorithm](#Flood_Fill)
   - [岛屿问题/the Number of Islands](#岛屿问题)
+  - 习题和参考资料
 
 ## 图<a name="图"></a>
 
@@ -17,14 +18,6 @@ Flood fill, is a flooding algorithm that determines and alters the area connecte
 |<img src="https://github.com/TBD2021/Salt-and-Computer-Science/blob/main/Algorithms/img/floodfill1_animation_stack.gif" width=200px>|<img src="https://github.com/TBD2021/Salt-and-Computer-Science/blob/main/Algorithms/img/floodfill1_animation_queue.gif" width=200px>|
 |---|---|
 |Four-way flood fill using a stack|Four-way flood fill using a queue|
-
-**习题**
-
-- [算法题解：Flood_Fill&岛屿问题](算法题解/算法题解-Flood_Fill&岛屿问题.md)
-
-**参考资料**
-
-- [Wikipedia: Flood fill](https://en.wikipedia.org/wiki/Flood_fill)
 
 ### 岛屿问题/the Number of Islands <a name="岛屿问题"></a>
 
@@ -78,10 +71,19 @@ Return the number of islands present in the matrix.
 
   Space Complexity: O(min(M,N))
 
+### 习题和参考资料
+
 **习题**
 
 - [算法题解：Flood_Fill&岛屿问题](算法题解/算法题解-Flood_Fill&岛屿问题.md)
 
 **参考资料**
+**参考资料**
 
+- [Wikipedia: Flood fill](https://en.wikipedia.org/wiki/Flood_fill)
+
+
+
+- [算法题解：Flood_Fill&岛屿问题](算法题解/算法题解-Flood_Fill&岛屿问题.md)
 - [Finding The Number of Islands](https://www.interviewbit.com/blog/number-of-islands/)
+- 
