@@ -1,4 +1,4 @@
-# Algorithms in Solving Classic Problems
+# Algorithms in Classic Problems
 
 - [图](#图)
   - [Flood Fill Algorithm](#Flood_Fill)
