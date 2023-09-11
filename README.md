@@ -18,7 +18,7 @@ Shipwrecked, Salt and Science of Computer
   - 树
   - 图
 - 算法思想
-- [Algorithms in Sloving Classic Problems](Algorithms/Algorithms_in_Solving_Classic_Problems.md)
+- [Algorithms in Classic Problems](Algorithms/Algorithms_in_Classic_Problems.md)
   - 图
     - Flood Fill
     - 岛屿问题/the Number of Islands
