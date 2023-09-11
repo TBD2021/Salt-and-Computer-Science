@@ -1,9 +1,8 @@
 # Algorithms in Solving Classic Problems
 
- [图](#图)
-
-- [Flood Fill Algorithm](#Flood_Fill)
-- [岛屿问题/the Number of Islands](#岛屿问题)
+- [图](#图)
+  - [Flood Fill Algorithm](#Flood_Fill)
+  - [岛屿问题/the Number of Islands](#岛屿问题)
 
 ## 图<a name="图"></a>
 
