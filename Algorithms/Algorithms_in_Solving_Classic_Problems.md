@@ -3,7 +3,7 @@
 - [图](#图)
   - [Flood Fill Algorithm](#Flood_Fill)
   - [岛屿问题/the Number of Islands](#岛屿问题)
-  - 习题和参考资料
+  - [习题和参考资料](#习题和参考资料20230910)
 
 ## 图<a name="图"></a>
 
@@ -71,19 +71,13 @@ Return the number of islands present in the matrix.
 
   Space Complexity: O(min(M,N))
 
-### 习题和参考资料
+### 习题和参考资料 <a name="习题和参考资料20230910">
 
 **习题**
 
 - [算法题解：Flood_Fill&岛屿问题](算法题解/算法题解-Flood_Fill&岛屿问题.md)
 
 **参考资料**
-**参考资料**
 
 - [Wikipedia: Flood fill](https://en.wikipedia.org/wiki/Flood_fill)
-
-
-
-- [算法题解：Flood_Fill&岛屿问题](算法题解/算法题解-Flood_Fill&岛屿问题.md)
 - [Finding The Number of Islands](https://www.interviewbit.com/blog/number-of-islands/)
-- 
