@@ -7,7 +7,7 @@
 ### Flood Fill <a name ="LeetCode-733">
 [LeetCode-733. Flood Fill (Easy)](https://leetcode.com/problems/flood-fill/)
 
-**解析**图的遍历，DFS，BFS都可以。
+**【解析**图的遍历，DFS，BFS都可以。
 
 ```Java
 //4-direction Flood Fill Method
