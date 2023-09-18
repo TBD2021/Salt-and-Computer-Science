@@ -43,7 +43,7 @@
         return;  
     }
 ```
-## Flood Fill Algorithms <a name ="the_Number_of_Islands20230923">
+## 岛屿问题/the Number of Islands <a name ="the_Number_of_Islands20230923">
 
 ### Number of Islands <a name ="LeetCode-200">
 [LeetCode-200. Number of Islands (Medium)](https://leetcode.com/problems/number-of-islands/)
