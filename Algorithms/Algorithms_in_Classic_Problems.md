@@ -1,13 +1,13 @@
 # Algorithms in Classic Problems
 
 - [图](#图)
-  - [Flood Fill Algorithm](#Flood_Fill)
+  - [Flood Fill Algorithms](#Flood_Fill)
   - [岛屿问题/the Number of Islands](#岛屿问题)
   - [习题和参考资料](#习题和参考资料20230910)
 
 ## 图<a name="图"></a>
 
-### Flood Fill Algorithm <a name="Flood_Fill"></a>
+### Flood Fill Algorithms <a name="Flood_Fill"></a>
 
 Flood fill, is a flooding algorithm that determines and alters the area connected to a given node in a multi-dimensional array with some matching attribute.
 
