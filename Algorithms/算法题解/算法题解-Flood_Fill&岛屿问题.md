@@ -46,7 +46,7 @@
 ## Flood Fill Algorithms <a name ="the_Number_of_Islands20230923">
 
 ### Number of Islands <a name ="LeetCode-200">
-[LeetCode-200. Number of Islands (Medium)]([https://leetcode.com/problems/flood-fill/](https://leetcode.com/problems/number-of-islands/)https://leetcode.com/problems/number-of-islands/)
+[LeetCode-200. Number of Islands (Medium)](https://leetcode.com/problems/number-of-islands/)
 
 **【解析】** 每次用DFS/BFS遍历，将1个岛涂色。扫描整个矩阵，计数总共涂了几个岛。
 
