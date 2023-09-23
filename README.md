@@ -14,10 +14,10 @@ Shipwrecked, Salt and Science of Computer
 ### 算法与数据结构/Algorithm and Data Structure
 
 - 算法的验证&效率分析
+- 算法思想
 - [数据结构](Algorithms/数据结构.md)
   - 树
   - 图
-- 算法思想
 - [Algorithms in Classic Problems](Algorithms/Algorithms_in_Classic_Problems.md)
   - 图
     - Flood Fill Algorithm
