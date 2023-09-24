@@ -1,34 +1,30 @@
 # 树/Tree
 
-- [树/Tree](#树20230909)
-  - 树的结构
-  - 树的遍历 
-    - 深度优先遍历/DFS：用栈实现存储次序信息
-    - 宽度优先遍历/BFS：用队列存储次序信息
-  - 习题和参考资料
-  - 并查集
+- 树的结构
+- 树的遍历 
+  - 深度优先遍历/DFS：用栈实现存储次序信息
+  - 宽度优先遍历/BFS：用队列存储次序信息
+- 习题和参考资料
 
-## 树 <a name = "树20230909">
-
-### 树的结构
+## 树的结构
 
 
 
-### 树的遍历（未完待续）
+## 树的遍历（未完待续）
 
-**I. 深度优先遍历/Depth First Traversal**
+### 深度优先遍历/Depth First Traversal**
 
 Depth-first search (DFS) is an algorithm for traversing or searching tree or graph data structures. It starts at the root node (selecting some arbitrary node as the root node in the case of a graph) and explores as far as possible along each branch before backtracking.
 
 DFS使用栈来存储次序信息。
 
-**II. 宽度优先遍历&层次遍历/Breadth First Traversal&Level Order Traversal**
+### 宽度优先遍历&层次遍历/Breadth First Traversal&Level Order Traversal**
 
 Breadth-first search (BFS) is an algorithm for searching a tree or graph data structure. It starts at the root and explores all nodes at the present depth prior to moving on to the nodes at the next depth level. 
 
 BFS使用队列来存储次序信息。
 
-**宽度优先遍历&层次遍历**
+- **宽度优先遍历&层次遍历**
 
   - 宽度优先遍历：It explores all the nodes at the present depth before moving on to the nodes at the next depth level
   - 层次遍历：Each node at level i is processed before any node at level i+1
