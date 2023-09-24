@@ -8,7 +8,7 @@
 
 ## 图<a name="图"></a>
 
-### Flood Fill Algorithms <a name="Flood_Fill"></a>
+### 泛洪算法/Flood Fill Algorithms <a name="Flood_Fill"></a>
 
 Flood fill, is a flooding algorithm that determines and alters the area connected to a given node in a multi-dimensional array with some matching attribute.
 
