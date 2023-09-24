@@ -1,11 +1,11 @@
 # Algorithms in Classic Problems
 
-- [图的遍历：DFS and BFS](#图的遍历：DFS and BFS) 
+- [图的遍历：DFS and BFS](#图的遍历：DFS&BFS) 
   - [泛洪算法/Flood Fill Algorithms](#Flood_Fill)
   - [岛屿问题/the Number of Islands](#岛屿问题)
   - [习题和参考资料](#习题和参考资料20230910)
 
-## 图的遍历：DFS and BFS<a name="图的遍历：DFS and BFS"></a>
+## 图的遍历：DFS and BFS<a name="图的遍历：DFS&BFS"></a>
 
 ### 泛洪算法/Flood Fill Algorithms <a name="Flood_Fill"></a>
 
