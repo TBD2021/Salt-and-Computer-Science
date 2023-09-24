@@ -118,7 +118,7 @@ Time Complexity Cost:
 
 图的DFS结果不唯一。
 
-- **算法-非递归实现**
+**【算法-非递归实现】**
 
 1. 从源节点开始，把相邻节点依次放入栈。
 2. 弹出一个节点，把该节点下一个**没有进过栈**的邻接节点放入栈。
@@ -128,7 +128,7 @@ Time Complexity Cost:
 
 图的BFS算法与树的BFS算法相近。关键的不同在于，由于图中可能有环，图的BFS需要记录一个节点是否已经被访问过（Visted/Not visted），以避免对一个节点反复访问。
 
-- **算法-非递归实现**
+**【算法-非递归实现】**
 
 1. 从源节点开始，把相邻节点依次放入队列。
 2. 弹出一个节点，把该节点下一个**没有进过队列**的邻接节点放入队列。
@@ -157,7 +157,7 @@ DFS和BFS做为两个最基础的图搜索算法，通常是其他路径规划�
   - DFS可能会陷入永远沿着一条路径走的循环，解决方法之一是对DFS设置一个截止深度(Cut-off Depth)；BFS不会陷入循环。
   - DFS的递归写法可读性非常好；BFS的递归写法实质上是借用了DFS的递归，在每次访问一个节点时，记录下该节点所属的level，然后按level的次序返回节点
 - Cost
-  - BFS在时间和空间的花销上都比DFS要大。 
+  - BFS在时间和空间上的花销都比DFS大。 
   - 时间复杂度
      - DFS：O(V+E) for Adjacency List, O(V<sup>2</sup>) for Adjacency Matrix 
      - BFS：O(V+E) for Adjacency List, O(V<sup>2</sup>) for Adjacency Matrix
@@ -166,14 +166,36 @@ DFS和BFS做为两个最基础的图搜索算法，通常是其他路径规划�
     - BFS: 要记录访问到的每一层的层次信息，需求的额外空间较多，为O(b×d）
 
 结论：
+
 - 大多数情况下，用DFS可以节省时间、空间
 - 搜索的目标节点距离起点较近的情况，如求最短路径，用BFS速度更快
 
-## 拓扑排序/Topological Sort
+## 拓扑排序算法/Topological Sort
 
+拓扑排序/Topological Sort: Topological sorting for Directed Acyclic Graph (DAG) is a linear ordering of vertices such that for every directed edge *(u, v)*, vertex *u* comes before *v* in the ordering.
 
+- 拓扑排序用于寻找一个符合依赖关系的线性序列。
+- 拓扑排序的适用范围是有向无环图(DAG)，且有入度为0的节点。有向无环图和存在拓扑序列是互为充分必要条件：
+  - 如果一个图不是有向无环图，那么它就没有拓扑序列。
+  - 如果一个图是有向无环图，那么它至少有一个拓扑序列。
+  - 反之，如果一个图存在一个拓扑序列，那么这个图必定是有向无环图。
 
-### 习题和参考资料
+**【应用范例】**
+  
+  - 项目之间的依赖性问题：建立一个有向无环图，用顶点表示项目，用边表示依赖关系，找出该图中的拓扑序列。
+  - 判断一个图是不是有向无环图：判断用拓扑排序得到的拓扑序列所包含的节点数量是否与图的节点数量相等。 
+
+**【算法】**
+
+1. 计算图中所有节点的入度。将入度为0的点放入一个队列中。
+2. 将队列中的头节点出队并输出，再将它及它的影响删除(发出的边删除，后继节点的入度-1)，将后继节点中所有入度变为0的节点放入队列。
+3. 重复步骤2，直到队列清空。
+
+- Cost
+  - 时间复杂度：O(*V*+*E*)
+  - 空间复杂度：O(*V*) 
+
+## 习题和参考资料
 
 **参考资料**
 - [Difference between BFS and DFS](https://www.geeksforgeeks.org/difference-between-bfs-and-dfs/?ref=lbp)
