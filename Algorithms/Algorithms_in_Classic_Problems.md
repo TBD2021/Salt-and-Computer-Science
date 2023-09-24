@@ -27,7 +27,7 @@ Flood fill, is a flooding algorithm that determines and alters the area connecte
 Given a matrix of size M x N, where ‘1’ represents land, while ‘0’ represents water. An island is a group of 1’s surrounded either vertically or horizontally.
 Return the number of islands present in the matrix.
 
-**Example 1**
+**【Example 1】**
 
 > **Input:**
 >
@@ -39,9 +39,7 @@ Return the number of islands present in the matrix.
 
 - 使用BFS/DFS遍历二维数组，也就是Flood Fill Algorithm
 
-**方法 1：DFS**
-
-- **算法**
+**【算法-DFS】**
 
 1. Scan the matrix from (0,0) to (N, M).
 2. If the current element is ‘1’, start a DFS.
@@ -49,7 +47,7 @@ Return the number of islands present in the matrix.
 4. Count the number of islands as the number of nodes that trigger the DFS.
 5. Return count.
 
-- **复杂度**
+- 复杂度
 
   Time Complexity: O(M * N), where M and N are the size of the matrix
   
