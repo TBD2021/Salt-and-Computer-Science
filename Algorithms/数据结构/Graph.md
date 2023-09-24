@@ -48,38 +48,38 @@
 A Graph denoted by *G=(V, E)*, is a non-linear data structure defined by a finite set of vertices *V*, and a set of edges *E* consisting of ordered or unordered pairs of vertices from *V*. 
 
 - **顶点与边**
-  - 顶点/Vertices
-  - 边/Edges
-  - 顶点的度/Degree of a Vertex: The degree of a vertex is the number of edges incident with that vertex.
+  - 顶点(Vertices)
+  - 边(Edges)
+  - 顶点的度(Degree of a Vertex): The degree of a vertex is the number of edges incident with that vertex.
 
 - **路径**
-  - 路径/Path: A path is a sequence of vertices with the property that each vertex in the sequence is adjacent to the vertex next to it. A path that does not repeat vertices is called a simple path.
+  - 路径(Path): A path is a sequence of vertices with the property that each vertex in the sequence is adjacent to the vertex next to it. A path that does not repeat vertices is called a simple path.
 
 - **环**
-  - 环/Cycle: A Cycle in graph is a path in which **only** the first and last vertices are equal.
-  - 回路/Circuit: A circuit is a path in graph in which the first and last vertices are equal.
+  - 环(Cycle): A Cycle in graph is a path in which **only** the first and last vertices are equal.
+  - 回路(Circuit): A circuit is a path in graph in which the first and last vertices are equal.
   
 - **自环与重边**
-  - 自环/Loop: A loop is an edge that connects a vertex to itself.
-  - 重边/Multiple Edges: Multiple edges are two or more edges connecting the same two vertices. 
+  - 自环(Loop): A loop is an edge that connects a vertex to itself.
+  - 重边(Multiple Edges): Multiple edges are two or more edges connecting the same two vertices. 
 
 ### 图的类型
 
 - **有向图与无向图**
-  - 有向图/Directed Graph: A graph in which edge has direction. That is the nodes are ordered pairs in the definition of every edge.
-  - 无向图/Undirected Graph: A graph in which edges do not have any direction. That is the nodes are unordered pairs in the definition of every edge. 
+  - 有向图(Directed Graph): A graph in which edge has direction. That is the nodes are ordered pairs in the definition of every edge.
+  - 无向图(Undirected Graph): A graph in which edges do not have any direction. That is the nodes are unordered pairs in the definition of every edge. 
 
 - **有权图与无权图**
-  - 有权图/Weighted Graph: A graph in which the edges are already specified with suitable weight is known as a weighted graph. 
-  - 无权图/Unweighted Graph: An unweighted graph is a graph in which the edges do not have weights or costs associated with them. Instead, they simply represent the presence of a connection between two vertices.
+  - 有权图(Weighted Graph): A graph in which the edges are already specified with suitable weight is known as a weighted graph. 
+  - 无权图(Unweighted Graph): An unweighted graph is a graph in which the edges do not have weights or costs associated with them. Instead, they simply represent the presence of a connection between two vertices.
 
 - **简单图与多重图**
-  - 简单图/Simple Graph: A simple graph is a graph that does not allow for loops or multiple edges.
-  - 多重图/Multigraph(or Pseudograph): A multigraph is a graph which is permitted to have multiple edges.
+  - 简单图(Simple Graph): A simple graph is a graph that does not allow for loops or multiple edges.
+  - 多重图(Multigraph,or Pseudograph): A multigraph is a graph which is permitted to have multiple edges.
 
 - **稠密图与稀疏图**
-  - 稠密图/Dense Graph: A graph with many edges compared to the number of vertices.
-  - 稀疏图/Sparse Graphs: A graph with relatively few edges compared to the number of vertices.
+  - 稠密图(Dense Graph): A graph with many edges compared to the number of vertices.
+  - 稀疏图(Sparse Graphs): A graph with relatively few edges compared to the number of vertices.
 
 ### 图的表示与底层实现
 
@@ -87,8 +87,8 @@ A Graph denoted by *G=(V, E)*, is a non-linear data structure defined by a finit
 
   Assume the graph *G=(V, E)* contains *|V|* vertices and *|E|* edges.
   
-  - 邻接矩阵/Adjacency Matrix：一个 *V×V* 二维数组（矩阵），在二维数组中保存每两个节点间的联通关系。
-  - 邻接表/Adjaceny List：一个长度为 *V* 的哈希表，其中每个数据对的Key值存储节点，Value值存储从该节点出发的所有相邻节点。
+  - 邻接矩阵(Adjacency Matrix)：一个 *V×V* 二维数组（矩阵），在二维数组中保存每两个节点间的联通关系。
+  - 邻接表(Adjaceny List)：一个长度为 *V* 的哈希表，其中每个数据对的Key值存储节点，Value值存储从该节点出发的所有相邻节点。
 
 - **对比：邻接矩阵与邻接表**
 
@@ -110,9 +110,9 @@ A Graph denoted by *G=(V, E)*, is a non-linear data structure defined by a finit
 
 ## 图的遍历
 
-### 深度优先遍历/Depth First Traversal
+### 深度优先遍历
 
-图的DFS算法与树的DFS算法相近。关键的不同在于，由于图中可能有环，图的DFS算法需要记录一个节点是否已经被访问过（Visted/Not visted），以避免对一个节点反复访问。
+图的深度优先遍历算法（Depth First Traversal, DFS）与树的DFS算法相近。关键的不同在于，由于图中可能有环，图的DFS算法需要记录一个节点是否已经被访问过（Visted/Not visted），以避免对一个节点反复访问。
 
 图的DFS结果不唯一。
 
@@ -122,9 +122,8 @@ A Graph denoted by *G=(V, E)*, is a non-linear data structure defined by a finit
 2. 弹出一个节点，把该节点下一个**没有进过栈**的邻接节点放入栈。
 3. 重复步骤1、2，直到栈变成空栈。
 
-### 宽度优先遍历/Breadth First Traversal
-
-图的BFS算法与树的BFS算法相近。关键的不同在于，由于图中可能有环，图的BFS需要记录一个节点是否已经被访问过（Visted/Not visted），以避免对一个节点反复访问。
+### 宽度优先遍历
+图的宽度优先遍历(Breadth First Traversal, BFS)算法与树的BFS算法相近。关键的不同在于，由于图中可能有环，图的BFS需要记录一个节点是否已经被访问过（Visted/Not visted），以避免对一个节点反复访问。
 
 **【算法-非递归实现】**
 
@@ -142,7 +141,7 @@ A Graph denoted by *G=(V, E)*, is a non-linear data structure defined by a finit
 
 - **DFS和BFS的遍历路径**
 
-在DFS和BFS的执行过程中，节点有3种标记状态：已访问过（Visited Nodes），未访问过（Un-Visited Nodes），以及还在递归栈中的（On Path Nodes）。
+在DFS和BFS的遍历过程中，节点有3种标记状态：已访问过（Visited Nodes），未访问过（Not Visited Nodes），以及还在递归栈中的（On Path Nodes）。
 
 [Animation of Graph DFS(Video)](https://www.youtube.com/watch?v=NUgMa5coCoE)
 
@@ -177,11 +176,11 @@ DFS和BFS做为两个最基础的图搜索算法，通常是其他路径规划�
 
 ## 有向图的环检测与拓扑排序算法
 
-在处理依赖性问题时，首先想到的就是把问题转化成有向图。检测有向图中是否有环，就是检测是否存在循环依赖；如果有向图中没有环，也就是一个有向无环图，那么它一定存在至少一个拓扑序列，也就是存在一个符合依赖关系的线性序列。因此，这两个问题本质上是一致的，它们既可以用DFS解决，也可以用BFS解决。
+在处理依赖性问题时，首先把问题中的项目转化成有向图，项目中的活动转化为图的顶点，活动之间的依赖关系转化为图的有向边。那么，检测这个有向图中是否存在环，就等于检测该项目是否存在循环依赖；如果这个有向图中没有环，也就是说这是一个有向无环图，那么它一定存在至少一个拓扑序列，也就等于该项目中存在一个符合依赖关系的线性序列。因此，有向图的环检测和拓扑排序算法这两个问题本质上是一致的，而它们既可以用DFS解决，也可以用BFS解决。
 
-### 拓扑排序算法/Topological Sort
+### 拓扑排序算法
 
-拓扑排序/Topological Sort: Topological sorting for Directed Acyclic Graph (DAG) is a linear ordering of vertices such that for every directed edge *(u, v)*, vertex *u* comes before *v* in the ordering.
+拓扑排序(Topological Sort): Topological sorting for Directed Acyclic Graph (DAG) is a linear ordering of vertices such that for every directed edge *(u, v)*, vertex *u* comes before *v* in the ordering.
 
 - 拓扑排序用于寻找一个符合依赖关系的线性序列。
 - 拓扑排序的适用范围是有向无环图(DAG)，且有入度为0的节点。有向无环图和存在拓扑序列是互为充分必要条件：
@@ -208,9 +207,9 @@ DFS和BFS做为两个最基础的图搜索算法，通常是其他路径规划�
 
 **【算法-基于DFS】**
 
-如果在遍历过程中，发现某节点有一条边指向一个已访问过的节点（对于无向图，该已访问节点不能是上一个节点），则该图中有环。
+如果一个图中有环，那么它一定有一条后向边(back edge)。 要检测后向边，就要对遍历过程进行tracking。前面提到，在DFS的遍历过程中，节点有3种标记状态：已访问过（Visited Nodes），未访问过（Un-Visited Nodes），以及还在递归栈中的（On Path Nodes）。 因此，如果在DFS的递归过程中，当前到达的节点已经存在于递归栈中(On Path)，那么图中就存在环。
 
-
+I
 ## 习题和参考资料
 
 **参考资料**
