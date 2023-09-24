@@ -17,7 +17,7 @@ Shipwrecked, Salt and Science of Computer
 - 算法思想
 - [数据结构](Algorithms/数据结构.md)
   - 树
-  - 图
+  - [图](Algorithms/数据结构)
 - [Algorithms in Classic Problems](Algorithms/Algorithms_in_Classic_Problems.md)
   - 图
     - Flood Fill Algorithm
