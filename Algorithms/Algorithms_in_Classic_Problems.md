@@ -14,7 +14,7 @@ Flood fill, is a flooding algorithm that determines and alters the area connecte
 
 **核心思路**
 
-- 就是图的遍历，使用DFS、BFS都可以
+就是图的遍历，使用DFS、BFS都可以。
 
 |<img src="https://github.com/TBD2021/Salt-and-Computer-Science/blob/main/Algorithms/img/floodfill1_animation_stack.gif" width=200px>|<img src="https://github.com/TBD2021/Salt-and-Computer-Science/blob/main/Algorithms/img/floodfill1_animation_queue.gif" width=200px>|
 |---|---|
@@ -37,7 +37,7 @@ Return the number of islands present in the matrix.
 
 **核心思路**
 
-- 使用BFS/DFS遍历二维数组，也就是Flood Fill Algorithm
+使用DFS/BFS遍历图，也就是Flood Fill Algorithm。每次将1个岛屿淹没，计数淹没的岛屿数量。
 
 **【算法-DFS】**
 
