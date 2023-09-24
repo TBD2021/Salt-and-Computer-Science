@@ -8,11 +8,13 @@
   √- 深度优先遍历/DFS：用栈存储次序信息
   √- 宽度优先遍历/BFS：用队列存储次序信息
   - Trade-off Between DFS and BFS
-- 图的环
+- 拓扑排序
+  
+  - 图的环
   - Detect Cycle in a Directed Graph/Undirected Graph/........
 - Shortest Path in Graph
 - Minimum Spanning Tree
-- 拓扑排序
+
 - 图的连通性
 - Maximum Flow
 - 习题和参考资料
@@ -36,6 +38,7 @@
     - 图搜索算法和路径规划算法概述
     - DFS和BFS
     - Trade-off between DFS and BFS
+- 拓扑排序
 
 ## 基础概念
 
@@ -121,7 +124,7 @@ Time Complexity Cost:
 2. 弹出一个节点，把该节点下一个**没有进过栈**的邻接节点放入栈。
 3. 重复步骤1、2，直到栈变成空栈。
 
-### 宽度优先遍历/Breadth First Traversal**
+### 宽度优先遍历/Breadth First Traversal
 
 图的BFS算法与树的BFS算法相近。关键的不同在于，由于图中可能有环，图的BFS需要记录一个节点是否已经被访问过（Visted/Not visted），以避免对一个节点反复访问。
 
