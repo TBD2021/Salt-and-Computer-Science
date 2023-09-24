@@ -1,8 +1,9 @@
 # 图/Graph
 <details>
-- 基础
-  - 图的定义与特性
-  - 图的表示与底层实现
+<summary> Later Updates </summary>
+√- 基础概念
+  √- 图的定义
+  √- 图的表示与底层实现
   - Transpose graph??????
 - 图的遍历
   - 深度优先遍历/DFS：用栈存储次序信息
@@ -18,37 +19,86 @@
 - 习题和参考资料
 </details>
 
-## 基础
+- 基础概念
+  - 图的定义与相关概念
+  - 图的类型
+    - 有向图与无向图、
+    - 有权图与无权图
+    - 简单图与多重图
+    - 稠密图与稀疏图
+  - 图的表示与底层实现
+    - 邻接矩阵
+    - 邻接表
 
-A graph *G=(V, E)* is defined by a finite set of *vertices V*, and a set of *edges E* consisting of ordered or unordered pairs of vertices from *V*. 
+## 基础概念
 
-**特性**
+### 图的定义与相关概念
 
-- Directed vs. Undirected Graphs
-- Weighted vs. Unweighted Graphs
-- Simple vs. Non-Simple Graphs
-- Sparse vs. Dense Graphs
+A Graph denoted by *G=(V, E)*, is a non-linear data structure defined by a finite set of vertices *V*, and a set of edges *E* consisting of ordered or unordered pairs of vertices from *V*. 
 
-## 图的底层实现
+**顶点与边**
+
+- 顶点/Vertices
+- 边/Edges
+- 顶点的度/Degree of a Vertex: The degree of a vertex is the number of edges incident with that vertex.
+
+**路径**
+
+- 路径/Path: A path is a sequence of vertices with the property that each vertex in the sequence is adjacent to the vertex next to it. A path that does not repeat vertices is called a simple path.
+
+**环**
+
+- 环/Cycle: A Cycle in graph is a path in which **only** the first and last vertices are equal.
+- 回路/Circuit: A circuit is a path in graph in which the first and last vertices are equal.
+  
+**自环与重边**
+
+- 自环/Loop: A loop is an edge that connects a vertex to itself.
+- 重边/Multiple Edges: Multiple edges are two or more edges connecting the same two vertices. 
+
+### 图的类型
+
+**有向图与无向图**
+
+- 有向图/Directed Graph: A graph in which edge has direction. That is the nodes are ordered pairs in the definition of every edge.
+- 无向图/Undirected Graph: A graph in which edges do not have any direction. That is the nodes are unordered pairs in the definition of every edge. 
+
+**有权图与无权图**
+
+- 有权图/Weighted Graph: A graph in which the edges are already specified with suitable weight is known as a weighted graph. 
+- 无权图/Unweighted Graph: An unweighted graph is a graph in which the edges do not have weights or costs associated with them. Instead, they simply represent the presence of a connection between two vertices.
+
+**简单图与多重图**
+
+- 简单图/Simple Graph: A simple graph is a graph that does not allow for loops or multiple edges.
+- 多重图/Multigraph(or Pseudograph): A multigraph is a graph which is permitted to have multiple edges.
+
+**稠密图与稀疏图**
+
+- 稠密图/Dense Graph: A graph with many edges compared to the number of vertices.
+- 稀疏图/Sparse Graphs: A graph with relatively few edges compared to the number of vertices.
+
+### 图的表示与底层实现
 
 Assume the graph *G=(V, E)* contains *|V|* vertices and *|E|* edges.
-- 邻接矩阵/Adjacency Matrix：一个 *V×V* 二维数组（矩阵），在二维数组中保存每两个节点间的联通关系
-- 邻接表/Adjaceny list：一个长度为 *V* 的哈希表，其中每个数据对的Key值存储节点，Value值存储从该节点出发的所有相邻节点
+- 邻接矩阵/Adjacency Matrix：一个 *V×V* 二维数组（矩阵），在二维数组中保存每两个节点间的联通关系。
+- 邻接表/Adjaceny List：一个长度为 *V* 的哈希表，其中每个数据对的Key值存储节点，Value值存储从该节点出发的所有相邻节点。
 
 **Trade-off between Adijacency List and Adjaacency Matrix**
 
-|Time Complexity Cost|
-|   |Adijacency List|Adjacency Matrix|
-|---|---|---|
-|Store graph|O(V+E)|O(V<sup>2</sup>)|
-|Add vertex|O(1)|O(V<sup>2</sup>)|
-|Add edge|O(1)|O(1)|
-|Remove vertex|O(E)|O(V<sup>2</sup>)|
-|Remove Edge|O(V)|O(1)|
-|判断已知位置的两个节点是否邻接|O(V)|O(1)|
+Time Complexity Cost:
 
-- 大多数情况，邻接表都优于邻接矩阵
-- 稀疏图(节点较多，边较少)适合用邻接表存储，稠密图(节点较少，边较多)适合用邻接矩阵存储
+|Action|Adijacency Matrix|Adjacency List|
+|---|---|---|
+|Store graph|O(V<sup>2</sup>)|O(V+E)|
+|Add vertex|O(V<sup>2</sup>)|O(1)|
+|Add edge|O(1)|O(1)|
+|Remove vertex|O(V<sup>2</sup>)|O(E)|
+|Remove Edge|O(1)|O(V)|
+|判断已知位置的两个节点是否邻接|O(1)|O(V)|
+
+- 大多数情况下，邻接表都优于邻接矩阵。
+- 稀疏图适合用邻接表存储，稠密图适合用邻接矩阵存储。
 
 ## 图的遍历
 
