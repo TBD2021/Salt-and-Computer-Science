@@ -37,7 +37,9 @@
   - 图搜索算法：DFS和BFS
     - 图搜索算法和路径规划算法概述
     - 对比：DFS and BFS
-- 拓扑排序
+- 有向图的环检测与拓扑排序算法
+  - 有向图的环检测
+  - 拓扑排序算法
 
 ## 基础概念
 
@@ -154,6 +156,7 @@ DFS和BFS做为两个最基础的图搜索算法，通常是其他路径规划�
 - 实现
   - DFS可能会陷入永远沿着一条路径走的循环，解决方法之一是对DFS设置一个截止深度(Cut-off Depth)；BFS不会陷入循环。
   - DFS的递归写法可读性非常好；BFS的递归写法实质上是借用了DFS的递归，在每次访问一个节点时，记录下该节点所属的level，然后按level的次序返回节点
+  - DFS可以回溯；BFS不能回溯。
 - Cost
   - BFS在时间和空间上的花销都比DFS大。 
   - 时间复杂度
@@ -168,7 +171,11 @@ DFS和BFS做为两个最基础的图搜索算法，通常是其他路径规划�
 - 大多数情况下，用DFS可以节省时间、空间
 - 搜索的目标节点距离起点较近的情况，如求最短路径，用BFS速度更快
 
-## 拓扑排序算法/Topological Sort
+## 有向图的环检测与拓扑排序算法
+
+在处理依赖性问题时，首先想到的就是把问题转化成有向图。检测有向图中是否有环，就是检测是否存在循环依赖；如果有向图中没有环，也就是一个有向无环图，那么它一定存在至少一个拓扑序列，也就是存在一个符合依赖关系的线性序列。因此，这两个问题本质上是一致的，它们既可以用DFS解决，也可以用BFS解决。
+
+### 拓扑排序算法/Topological Sort
 
 拓扑排序/Topological Sort: Topological sorting for Directed Acyclic Graph (DAG) is a linear ordering of vertices such that for every directed edge *(u, v)*, vertex *u* comes before *v* in the ordering.
 
@@ -192,6 +199,13 @@ DFS和BFS做为两个最基础的图搜索算法，通常是其他路径规划�
 - Cost
   - 时间复杂度：O(*V*+*E*)
   - 空间复杂度：O(*V*) 
+
+### 有向图的环检测/Detect cycle in a directed graph
+
+**【算法-基于DFS】**
+
+如果在遍历过程中，发现某节点有一条边指向一个已访问过的节点（对于无向图，该已访问节点不能是上一个节点），则该图中有环。
+
 
 ## 习题和参考资料
 
