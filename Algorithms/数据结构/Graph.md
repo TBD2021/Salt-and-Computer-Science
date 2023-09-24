@@ -1,13 +1,22 @@
 # 图/Graph
-
-  - 基础
-  - 图的底层实现：邻接矩阵、邻接表
-  - 图的遍历：
-    - 深度优先遍历/DFS：用栈存储次序信息
-    - 宽度优先遍历/BFS：用队列存储次序信息
-    - DFS vs. BFS： When to use?
-  - 拓扑排序
-  - 习题和参考资料
+<details>
+- 基础
+  - 图的定义与特性
+  - 图的表示与底层实现
+  - Transpose graph??????
+- 图的遍历
+  - 深度优先遍历/DFS：用栈存储次序信息
+  - 宽度优先遍历/BFS：用队列存储次序信息
+  - Trade-off Between DFS and BFS
+- 图的环
+  - Detect Cycle in a Directed Graph/Undirected Graph/........
+- Shortest Path in Graph
+- Minimum Spanning Tree
+- 拓扑排序
+- 图的连通性
+- Maximum Flow
+- 习题和参考资料
+</details>
 
 ## 基础
 
