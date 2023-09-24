@@ -7,8 +7,8 @@
 √- 图的遍历
   √- 深度优先遍历/DFS：用栈存储次序信息
   √- 宽度优先遍历/BFS：用队列存储次序信息
-  - Trade-off Between DFS and BFS
-- 拓扑排序
+  √- Trade-off Between DFS and BFS
+√- 拓扑排序
   
   - 图的环
   - Detect Cycle in a Directed Graph/Undirected Graph/........
