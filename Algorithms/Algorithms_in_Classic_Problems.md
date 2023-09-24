@@ -48,7 +48,7 @@ Return the number of islands present in the matrix.
 5. Return count.
 
 - Cost
-  - 时间复杂度: O(M * N), where M and N are the size of the matrix.
+  - 时间复杂度：O(M * N), where M and N are the size of the matrix.
   - 空间复杂度：O(M * N).
 
 **【算法-BFS】**
@@ -61,7 +61,7 @@ Return the number of islands present in the matrix.
 6. Return count.
 
 - Cost
-  - 时间复杂度: O(M * N), where M and N is the size of the matrix.
+  - 时间复杂度：O(M * N), where M and N is the size of the matrix.
   - 空间复杂度：O(min(M,N))
 
 ### 习题和参考资料 <a name="习题和参考资料20230910">
