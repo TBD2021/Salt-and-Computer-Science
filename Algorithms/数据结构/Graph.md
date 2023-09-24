@@ -140,6 +140,14 @@ A Graph denoted by *G=(V, E)*, is a non-linear data structure defined by a finit
 
 路径规划算法/Pathfinding Algorithms用于在图中寻找给定的起点与终点之间符合要求的路径。
 
+- **DFS和BFS的遍历路径**
+
+在DFS和BFS的执行过程中，节点有3种标记状态：已访问过（Visited Nodes），未访问过（Un-Visited Nodes），以及还在递归栈中的（On Path Nodes）。
+
+[Animation of Graph DFS(Video)](https://www.youtube.com/watch?v=NUgMa5coCoE)
+
+[Animation of Graph BFS(Video)](https://www.youtube.com/watch?v=x-VTfcmrLEQ)
+
 - **对比：DFS and BFS**
 
 深度优先搜索DFS是从给定的起点在图中做深度优先遍历。广度优先遍历BFS是从给定的起点在图中做宽度优先遍历。
