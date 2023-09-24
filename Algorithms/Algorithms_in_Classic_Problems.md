@@ -1,9 +1,10 @@
 # Algorithms in Classic Problems
 
 - [图](#图)
-  - [Flood Fill Algorithms](#Flood_Fill)
-  - [岛屿问题/the Number of Islands](#岛屿问题)
-  - [习题和参考资料](#习题和参考资料20230910)
+  - 图的遍历：DFS and BFS 
+    - [泛洪算法/Flood Fill Algorithms](#Flood_Fill)
+    - [岛屿问题/the Number of Islands](#岛屿问题)
+    - [习题和参考资料](#习题和参考资料20230910)
 
 ## 图<a name="图"></a>
 
