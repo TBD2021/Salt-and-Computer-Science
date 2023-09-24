@@ -47,15 +47,11 @@ Return the number of islands present in the matrix.
 4. Count the number of islands as the number of nodes that trigger the DFS.
 5. Return count.
 
-- 复杂度
+- Cost
+  - 时间复杂度: O(M * N), where M and N are the size of the matrix.
+  - 空间复杂度：O(M * N).
 
-  Time Complexity: O(M * N), where M and N are the size of the matrix
-  
-  Space Complexity: O(M * N)
-
-**方法 2：BFS**
-
-- **算法**
+**【算法-BFS】**
 
 1. Scan the matrix from (0,0) till (N, M).
 2. If the current element is ‘1’, start a BFS.
@@ -64,11 +60,9 @@ Return the number of islands present in the matrix.
 5. The count is the total number of times the BFS has been invoked.
 6. Return count.
 
-- **复杂度**
-  
-  Time Complexity: O(M * N), where M and N is the size of the matrix
-
-  Space Complexity: O(min(M,N))
+- Cost
+  - 时间复杂度: O(M * N), where M and N is the size of the matrix.
+  - 空间复杂度：O(min(M,N))
 
 ### 习题和参考资料 <a name="习题和参考资料20230910">
 
