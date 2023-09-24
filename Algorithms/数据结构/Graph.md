@@ -30,14 +30,14 @@
   - 图的表示与底层实现
     - 邻接矩阵
     - 邻接表
-    - Trade-off between Adijacency List and Adijacency Matrix
+    - 对比：Adijacency List and Adijacency Matrix
 - 图的遍历和图搜索算法
   - 图的深度优先遍历：用栈存储次序信息
   - 图的宽度优先遍历：用队列存储次序信息
   - 图搜索算法：DFS和BFS
     - 图搜索算法和路径规划算法概述
     - DFS和BFS
-    - Trade-off between DFS and BFS
+    - 对比：DFS and BFS
 - 拓扑排序
 
 ## 基础概念
@@ -94,7 +94,7 @@ Assume the graph *G=(V, E)* contains *|V|* vertices and *|E|* edges.
 - 邻接矩阵/Adjacency Matrix：一个 *V×V* 二维数组（矩阵），在二维数组中保存每两个节点间的联通关系。
 - 邻接表/Adjaceny List：一个长度为 *V* 的哈希表，其中每个数据对的Key值存储节点，Value值存储从该节点出发的所有相邻节点。
 
-**Trade-off between Adijacency List and Adjaacency Matrix**
+**对比：Adijacency List and Adjaacency Matrix**
 
 Time Complexity Cost:
 
@@ -145,9 +145,10 @@ Time Complexity Cost:
 **DFS和BFS**
 
 -DFS: 从给定的起点在图中做深度优先遍历。
+
 -BFS: 从给定的起点在图中做宽度优先遍历。
 
-**Trade-off between DFS and BFS**
+**对比： DFS and BFS**
 
 DFS和BFS做为两个最基础的图搜索算法，通常是其他路径规划算法的基础部件：
 - 正确性: 
