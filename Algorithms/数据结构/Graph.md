@@ -4,10 +4,9 @@
 √- 基础概念
   √- 图的定义
   √- 图的表示与底层实现
-  - Transpose graph??????
-- 图的遍历
-  - 深度优先遍历/DFS：用栈存储次序信息
-  - 宽度优先遍历/BFS：用队列存储次序信息
+√- 图的遍历
+  √- 深度优先遍历/DFS：用栈存储次序信息
+  √- 宽度优先遍历/BFS：用队列存储次序信息
   - Trade-off Between DFS and BFS
 - 图的环
   - Detect Cycle in a Directed Graph/Undirected Graph/........
@@ -29,6 +28,14 @@
   - 图的表示与底层实现
     - 邻接矩阵
     - 邻接表
+    - Trade-off between Adijacency List and Adijacency Matrix
+- 图的遍历和图搜索算法
+  - 图的深度优先遍历：用栈存储次序信息
+  - 图的宽度优先遍历：用队列存储次序信息
+  - 图搜索算法：DFS和BFS
+    - 图搜索算法和路径规划算法概述
+    - DFS和BFS
+    - Trade-off between DFS and BFS
 
 ## 基础概念
 
@@ -102,54 +109,62 @@ Time Complexity Cost:
 
 ## 图的遍历
 
-**I. 深度优先遍历/Depth First Traversal**
+### 深度优先遍历/Depth First Traversal
 
-图的DFS算法与树的DFS算法相近。关键的不同在于，由于图中可能有环，图的DFS需要记录一个节点是否已经被访问过（Visted/Not visted），以避免对一个节点反复访问。
+图的DFS算法与树的DFS算法相近。关键的不同在于，由于图中可能有环，图的DFS算法需要记录一个节点是否已经被访问过（Visted/Not visted），以避免对一个节点反复访问。
 
 图的DFS结果不唯一。
 
-- **算法**-非递归实现
+- **算法-非递归实现**
 
 1. 从源节点开始，把相邻节点依次放入栈。
 2. 弹出一个节点，把该节点下一个**没有进过栈**的邻接节点放入栈。
 3. 重复步骤1、2，直到栈变成空栈。
 
-**II. 宽度优先遍历/Breadth First Traversal**
+### 宽度优先遍历/Breadth First Traversal**
 
 图的BFS算法与树的BFS算法相近。关键的不同在于，由于图中可能有环，图的BFS需要记录一个节点是否已经被访问过（Visted/Not visted），以避免对一个节点反复访问。
 
-- **算法**-非递归实现
+- **算法-非递归实现**
 
 1. 从源节点开始，把相邻节点依次放入队列。
 2. 弹出一个节点，把该节点下一个**没有进过队列**的邻接节点放入队列。
 3. 重复步骤1、2，直到队列变成空队列。
 
-**III. Trade-off between DFS and BFS***
+### 图搜索算法：DFS和BFS
 
-首先分析图的DFS和BFS的优缺点。
+**图搜索算法和路径规划算法**
 
-- 正确性
-  - 如果解存在，那么BFS一定能找到该解
-  - DFS不保证能找到该解
-  - 如果存在多个解，那么BFS可以找那个最小解（需求步数最小的解）
-  - DFS不能保证找到最小解
-- 时间复杂度
-  - DFS：O(V+E) for Adjacency List, O(V<sup>2</sup>) for Adjacency Matrix 
-  - BFS：O(V+E) for Adjacency List, O(V<sup>2</sup>) for Adjacency Matrix
-- 空间复杂度
-  假设图的深度为d，宽度(所有顶点的最大出度)为b
-  - DFS：由于仅需记录一条路径上的点，需求的额外空间较少，为O(d)
-  - BFS: 要记录访问到的每一层的层次信息，需求的额外空间较多，为O(b×d）
+图搜索算法/Graph Search (or Graph Traversal) Algorithms: 图搜索算法，或者说图遍历算法，主要用于在图中进行搜索或者发现。它们会访问所有算法能够到达的节点，但是不会对搜索路径有优化需求。图搜索算法包含深度优先搜索DFS和宽度优先搜索BFS，它们往往是其他路径规划算法的基础。
+
+路径规划算法/Pathfinding Algorithms: 路径规划算法用于在图中寻找给定的起点与终点之间符合要求的路径。
+
+**DFS和BFS**
+
+-DFS: 从给定的起点在图中做深度优先遍历。
+-BFS: 从给定的起点在图中做宽度优先遍历。
+
+**Trade-off between DFS and BFS**
+
+DFS和BFS做为两个最基础的图搜索算法，通常是其他路径规划算法的基础部件：
+- 正确性: 
+  - 如果解存在，那么BFS一定能找到该解；而DFS不保证能找到该解。
+  - 如果存在多个解，那么BFS可以找最短路径解；而DFS不能保证找到最短路径解。
 - 实现
-  - DFS可能会陷入永远沿着一条路径走的循环，解决方法之一是对DFS设置一个截止深度（Cut-off Depth）
-  - BFS不会陷入循环
-  - DFS的递归写法可读性非常好
-  - BFS的递归写法，实质上是借用DFS的递归，在每次访问一个节点时，记录下该节点所属的level，然后按level的次序返回节点
+  - DFS可能会陷入永远沿着一条路径走的循环，解决方法之一是对DFS设置一个截止深度(Cut-off Depth)；BFS不会陷入循环。
+  - DFS的递归写法可读性非常好；BFS的递归写法实质上是借用了DFS的递归，在每次访问一个节点时，记录下该节点所属的level，然后按level的次序返回节点
+- Cost
+  - BFS在时间和空间的花销上都比DFS要大。 
+  - 时间复杂度
+     - DFS：O(V+E) for Adjacency List, O(V<sup>2</sup>) for Adjacency Matrix 
+     - BFS：O(V+E) for Adjacency List, O(V<sup>2</sup>) for Adjacency Matrix
+  - 空间复杂度：假设图的深度为d，宽度(所有顶点的最大出度)为b
+    - DFS：由于仅需记录一条路径上的点，需求的额外空间较少，为O(d)
+    - BFS: 要记录访问到的每一层的层次信息，需求的额外空间较多，为O(b×d）
 
-**总结**
-
+结论：
+- 大多数情况下，用DFS可以节省时间、空间
 - 搜索的目标节点距离起点较近的情况，如求最短路径，用BFS速度更快
-- General Case，用DFS可以节省空间
 
 ## 拓扑排序/Topological Sort
 
