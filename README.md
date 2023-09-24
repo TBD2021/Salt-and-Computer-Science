@@ -15,8 +15,8 @@ Shipwrecked, Salt and Science of Computer
 
 - 算法的验证&效率分析
 - 算法思想
-- [数据结构](Algorithms/数据结构.md)
-  - 树
+- 数据结构
+  - [树](Algorithms/数据结构/Tree.md)
   - [图](Algorithms/数据结构/Graph.md)
 - [In Classic Application](Algorithms/Algorithms_in_Classic_Problems.md)
   - 图的遍历：DFS and BFS
