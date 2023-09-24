@@ -1,5 +1,6 @@
-- [图/Graph](#图20230909)
-  - 图的结构
+# 图/Graph
+
+  - 基础
   - 图的底层实现：邻接矩阵、邻接表
   - 图的遍历：
     - 深度优先遍历/DFS：用栈存储次序信息
@@ -8,10 +9,7 @@
   - 拓扑排序
   - 习题和参考资料
 
-## 图/Graph <a name = "图20230909">
-
-### 基础
-
+## 基础
 
 A graph *G=(V, E)* is defined by a finite set of *vertices V*, and a set of *edges E* consisting of ordered or unordered pairs of vertices from *V*. 
 
@@ -22,7 +20,7 @@ A graph *G=(V, E)* is defined by a finite set of *vertices V*, and a set of *edg
 - Simple vs. Non-Simple Graphs
 - Sparse vs. Dense Graphs
 
-### 图的底层实现
+## 图的底层实现
 
 Assume the graph *G=(V, E)* contains *|V|* vertices and *|E|* edges.
 - 邻接矩阵/Adjacency Matrix：一个 *V×V* 二维数组（矩阵），在二维数组中保存每两个节点间的联通关系
@@ -43,7 +41,7 @@ Assume the graph *G=(V, E)* contains *|V|* vertices and *|E|* edges.
 - 大多数情况，邻接表都优于邻接矩阵
 - 稀疏图(节点较多，边较少)适合用邻接表存储，稠密图(节点较少，边较多)适合用邻接矩阵存储
 
-### 图的遍历
+## 图的遍历
 
 **I. 深度优先遍历/Depth First Traversal**
 
@@ -94,7 +92,7 @@ Assume the graph *G=(V, E)* contains *|V|* vertices and *|E|* edges.
 - 搜索的目标节点距离起点较近的情况，如求最短路径，用BFS速度更快
 - General Case，用DFS可以节省空间
 
-### 拓扑排序/Topological Sort
+## 拓扑排序/Topological Sort
 
 
 
