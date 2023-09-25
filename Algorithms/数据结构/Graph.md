@@ -10,7 +10,7 @@
   √- Trade-off Between DFS and BFS
 √- 拓扑排序
   
-  - 图的环
+√-  - 图的环
   - Detect Cycle in a Directed Graph/Undirected Graph/........
 - Shortest Path in Graph
 - Minimum Spanning Tree
@@ -36,7 +36,7 @@
   - 图的宽度优先遍历：用队列存储次序信息
   - 图搜索算法：DFS和BFS
     - 图搜索算法和路径规划算法概述
-    - 对比：DFS and BFS
+    - 对比：DFS和BFS
 - 有向图的环检测与拓扑排序算法
   - 有向图的环检测
   - 拓扑排序算法
@@ -147,7 +147,7 @@ A Graph denoted by *G=(V, E)*, is a non-linear data structure defined by a finit
 
 [Animation of Graph BFS(Video)](https://www.youtube.com/watch?v=x-VTfcmrLEQ)
 
-- **对比：DFS and BFS**
+- **对比：DFS和BFS**
 
 深度优先搜索DFS是从给定的起点在图中做深度优先遍历。广度优先遍历BFS是从给定的起点在图中做宽度优先遍历。
 
