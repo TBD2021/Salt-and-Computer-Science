@@ -178,6 +178,12 @@ DFS和BFS做为两个最基础的图搜索算法，通常是其他路径规划�
 
 在处理依赖性问题时，首先把问题中的项目转化成有向图，项目中的活动转化为图的顶点，活动之间的依赖关系转化为图的有向边。那么，检测这个有向图中是否存在环，就等于检测该项目是否存在循环依赖；如果这个有向图中没有环，也就是说这是一个有向无环图，那么它一定存在至少一个拓扑序列，也就等于该项目中存在一个符合依赖关系的线性序列。因此，有向图的环检测和拓扑排序算法这两个问题本质上是一致的，区别仅在于，有向图的环检测仅仅需要一个判断结果，而拓扑排序算法需要输出一个符合依赖关系的结果序列。而这两个问题既可以用DFS解决，也可以用BFS解决。
 
+### 有向图的环检测
+
+**【算法-基于DFS】**
+
+如果一个图中有环，那么它一定有一条后向边(back edge)。 要检测后向边，就要对遍历过程进行tracking。前面提到，在DFS的遍历过程中，节点有3种标记状态：已访问过（Visited Nodes），未访问过（Un-Visited Nodes），以及还在递归栈中的（On Path Nodes）。 因此，如果在DFS的递归过程中，当前到达的节点已经存在于递归栈中(On Path)，那么图中就存在环。
+
 ### 拓扑排序算法
 
 拓扑排序(Topological Sort): Topological sorting for Directed Acyclic Graph (DAG) is a linear ordering of vertices such that for every directed edge *(u, v)*, vertex *u* comes before *v* in the ordering.
@@ -230,11 +236,6 @@ DFS和BFS做为两个最基础的图搜索算法，通常是其他路径规划�
   - 时间复杂度：O(*V*+*E*)
   - 空间复杂度：O(*V*) 
 
-### 有向图的环检测
-
-**【算法-基于DFS】**
-
-如果一个图中有环，那么它一定有一条后向边(back edge)。 要检测后向边，就要对遍历过程进行tracking。前面提到，在DFS的遍历过程中，节点有3种标记状态：已访问过（Visited Nodes），未访问过（Un-Visited Nodes），以及还在递归栈中的（On Path Nodes）。 因此，如果在DFS的递归过程中，当前到达的节点已经存在于递归栈中(On Path)，那么图中就存在环。
 
 
 
