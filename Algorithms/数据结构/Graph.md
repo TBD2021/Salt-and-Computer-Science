@@ -215,7 +215,7 @@ DFS和BFS做为两个最基础的图搜索算法，通常是其他路径规划�
 2. 重复步骤1，直到所有节点都是Visited，并被压入结果栈。
 3. 将结果栈输出。 
 
- 
+ <img src="https://github.com/TBD2021/Salt-and-Computer-Science/blob/main/Algorithms/img/%E5%B2%9B%E5%B1%BF%E9%97%AE%E9%A2%981.jpg" width=200px> 
 
 
 **【算法-基于BFS】**
