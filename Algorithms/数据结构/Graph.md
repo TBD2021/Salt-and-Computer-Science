@@ -184,6 +184,17 @@ DFS和BFS做为两个最基础的图搜索算法，通常是其他路径规划�
 
 如果一个图中有环，那么它一定有一条后向边(back edge)。 要检测后向边，就要对遍历过程进行tracking。前面提到，在DFS的遍历过程中，节点有3种标记状态：已访问过（Visited Nodes），未访问过（Un-Visited Nodes），以及还在递归栈中的（On Path Nodes）。 因此，如果在DFS的递归过程中，当前到达的节点已经存在于递归栈中(On Path)，那么图中就存在环。
 
+**【算法-基于BFS】**
+
+0. 创建一个数组，用于记录图中所有节点的入度。创建一个队列，将入度为0的点放入队列中。
+1. 将队列中的头节点出队，标记为Visited并输出，再将它及它的影响删除(发出的边删除，后继节点的入度-1)，将后继邻接节点中所有入度变为0的节点放入队列。
+2. 重复步骤1，直到队列清空。
+3. 如果所有节点都被访问过，说明该有向图中不存在环。否则，说明有向图中存在环。
+
+- Cost
+  - 时间复杂度：O(*V*+*E*)
+  - 空间复杂度：O(*V*) 
+
 ### 拓扑排序算法
 
 拓扑排序(Topological Sort): Topological sorting for Directed Acyclic Graph (DAG) is a linear ordering of vertices such that for every directed edge *(u, v)*, vertex *u* comes before *v* in the ordering.
@@ -228,18 +239,18 @@ DFS和BFS做为两个最基础的图搜索算法，通常是其他路径规划�
 
 **【算法-基于BFS】**
 
-1. 计算图中所有节点的入度。创建一个队列，将入度为0的点放入队列中。
-2. 将队列中的头节点出队~~标记为Visited~~并输出，再将它及它的影响删除(发出的边删除，后继节点的入度-1)，将后继节点中所有入度变为0的节点放入队列。
-3. 重复步骤2，直到队列清空。
+0. 创建一个数组，用于记录图中所有节点的入度。创建一个队列，将入度为0的点放入队列中。
+1. 将队列中的头节点出队，标记为Visited并输出，再将它及它的影响删除(发出的边删除，后继节点的入度-1)，将后继邻接节点中所有入度变为0的节点放入队列。
+2. 重复步骤1，直到队列清空。
+3. 如果所有节点都被访问过，说明该有向图中不存在环。否则，说明有向图中存在环。
+4. 如果有向图中无环，则节点出队的顺序即为拓扑序列。
 
 - Cost
   - 时间复杂度：O(*V*+*E*)
   - 空间复杂度：O(*V*) 
 
-
-
-
 ## 习题和参考资料
 
 **参考资料**
 - [Difference between BFS and DFS](https://www.geeksforgeeks.org/difference-between-bfs-and-dfs/?ref=lbp)
+- [Topological Sorting](https://www.geeksforgeeks.org/topological-sorting/)
