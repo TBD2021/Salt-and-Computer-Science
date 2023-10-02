@@ -19,11 +19,13 @@ Flood fill, is a flooding algorithm that determines and alters the area connecte
 
 ## 岛屿问题/the Number of Islands <a name="岛屿问题"></a>
 
-**问题背景**
+**描述**
 
-Given a matrix of size M x N, where ‘1’ represents land, while ‘0’ represents water. An island is a group of 1’s surrounded either vertically or horizontally.
+地图上有两种地形，陆地和水域。
 
-Return the number of islands present in the matrix.
+**问题**
+
+返回地图中的岛屿数量。
 
 **【Example 1】**
 
@@ -35,7 +37,9 @@ Return the number of islands present in the matrix.
 
 **核心思路**
 
-使用DFS/BFS遍历图并淹没岛屿，也就是泛洪算法。每当将1个岛屿完全淹没时，岛屿数量+1，将所有岛屿淹没后结束，输出计数结果。
+构建一个矩阵来表示地图。在矩阵中，用“1”表示陆地，用“0”表示水域。岛屿就是一组聚集在一起的“1”。
+
+使用DFS/BFS遍历图并淹没岛屿（也就是泛洪算法）。每当1个岛屿被完全淹没时，岛屿数量+1，将所有岛屿淹没后，输出计数结果。
 
 **【算法-DFS】**
 
