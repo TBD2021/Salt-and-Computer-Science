@@ -12,9 +12,10 @@ Flood fill, is a flooding algorithm that determines and alters the area connecte
 
 就是图的遍历，每次访问一个未访问过的节点，将其淹没(染色)。使用DFS、BFS都可以。
 
-|<img src="https://github.com/TBD2021/Salt-and-Computer-Science/blob/main/Algorithms/img/floodfill1_animation_stack.gif" width=200px>|<img src="https://github.com/TBD2021/Salt-and-Computer-Science/blob/main/Algorithms/img/floodfill1_animation_queue.gif" width=200px>|
-|---|---|
 |4-way flood fill using a stack|4-way flood fill using a queue|
+|---|---|
+|<img src="https://github.com/TBD2021/Salt-and-Computer-Science/blob/main/Algorithms/img/floodfill1_animation_stack.gif" width=300px>|<img src="https://github.com/TBD2021/Salt-and-Computer-Science/blob/main/Algorithms/img/floodfill1_animation_queue.gif" width=300px>|
+
 
 ## 岛屿问题/the Number of Islands <a name="岛屿问题"></a>
 
