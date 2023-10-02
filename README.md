@@ -19,7 +19,7 @@ Shipwrecked, Salt and Science of Computer
   - [树](Algorithms/数据结构/Tree.md)
   - [图](Algorithms/数据结构/Graph.md)
 - In Classic Problems
-  - [图的遍历：DFS and BFS](Algorithms/InClassicProblems/图的遍历：DFS&BFS.md)
+  - [图搜索算法：DFS and BFS](Algorithms/InClassicProblems/图搜索算法：DFS&BFS.md)
     - 泛洪算法/Flood Fill Algorithm
     - 岛屿问题/the Number of Islands
 - [算法题解](Algorithms/算法题解.md)
