@@ -99,7 +99,7 @@ A Graph denoted by *G=(V, E)*, is a non-linear data structure defined by a finit
     - 大多数情况下，邻接表都优于邻接矩阵。
     - 稀疏图适合用邻接表存储，稠密图适合用邻接矩阵存储。
 
-## 图的遍历
+## 图的遍历和图搜索算法
 
 ### 深度优先遍历
 
