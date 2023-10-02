@@ -23,6 +23,7 @@ Shipwrecked, Salt and Science of Computer
     - 泛洪算法/Flood Fill Algorithm
     - 岛屿问题/the Number of Islands
   - [图搜索算法：拓扑排序](Algorithms/InClassicProblems/图搜索算法：拓扑排序.md)
+    - 依赖性问题/Dependency Resolution 
 - [算法题解](Algorithms/算法题解.md)
 
 
