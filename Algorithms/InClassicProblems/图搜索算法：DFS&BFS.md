@@ -1,4 +1,4 @@
-# 图的遍历：DFS and BFS
+# 图搜索算法：DFS and BFS
 
 - [泛洪算法/Flood Fill Algorithms](#Flood_Fill)
 - [岛屿问题/the Number of Islands](#岛屿问题)
