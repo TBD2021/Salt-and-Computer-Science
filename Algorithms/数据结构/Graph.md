@@ -227,7 +227,7 @@ DFS和BFS做为两个最基础的图搜索算法，通常是其他路径规划�
 
 示例：
 
- <img src="https://github.com/TBD2021/Salt-and-Computer-Science/blob/main/Algorithms/img/TopologicalSortDFS1.png" width=800px> 
+ <img src="https://github.com/TBD2021/Salt-and-Computer-Science/blob/main/Algorithms/img/TopologicalSortDFS1.png" width=600px> 
 
 **【算法-基于BFS】**
 
