@@ -11,7 +11,7 @@
 </details>
 
 - 基础概念
-  - 图的定义与相关概念
+  - 图的定义
   - 图的类型
     - 有向图与无向图
     - 有权图与无权图
@@ -34,7 +34,7 @@
 
 ## 基础概念
 
-### 图的定义与相关概念
+### 图的定义
 
 A Graph denoted by *G=(V, E)*, is a non-linear data structure defined by a finite set of vertices *V*, and a set of edges *E* consisting of ordered or unordered pairs of vertices from *V*. 
 
