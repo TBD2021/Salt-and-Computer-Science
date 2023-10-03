@@ -7,4 +7,4 @@
 
 ### 并查集的定义
 
-
+并查集是一种用于存储一系列不相交集合(Disjoint/Non-Overlapping Set)的数据结构。
