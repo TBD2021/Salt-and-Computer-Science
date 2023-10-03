@@ -1,4 +1,4 @@
-# 图/Graph
+# 图（Graph）
 <details>
 <summary> Later Updates </summary>
 
