@@ -18,6 +18,9 @@ Shipwrecked, Salt and Science of Computer
 - 数据结构
   - [树](Algorithms/数据结构/Tree.md)
   - [图](Algorithms/数据结构/Graph.md)
+
+** Advanced Data Structures **
+  
   - [并查集](Algorithms/数据结构/Disjoint_Set.md)
 - In Classic Problems
   - [图搜索算法：DFS and BFS](Algorithms/InClassicProblems/图搜索算法：DFS&BFS.md)
