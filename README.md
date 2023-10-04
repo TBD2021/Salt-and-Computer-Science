@@ -16,12 +16,16 @@ Shipwrecked, Salt and Science of Computer
 - 算法的验证&效率分析
 - 算法思想
 - 数据结构
-  - [树](Algorithms/数据结构/Tree.md)
-  - [图](Algorithms/数据结构/Graph.md)
 
-**Advanced Data Structures**
-  
-  - [并查集](Algorithms/数据结构/Disjoint_Set.md)
+  - **Data Structures**
+    
+    - [树](Algorithms/数据结构/Tree.md)
+    - [图](Algorithms/数据结构/Graph.md)
+
+  - **Advanced Data Structures**
+
+    - [并查集](Algorithms/数据结构/Disjoint_Set.md)
+
 - In Classic Problems
   - [图搜索算法：DFS and BFS](Algorithms/InClassicProblems/图搜索算法：DFS&BFS.md)
     - 泛洪算法/Flood Fill Algorithm
