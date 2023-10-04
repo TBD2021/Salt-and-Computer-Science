@@ -21,6 +21,6 @@ In computer science, a disjoint set data structure is defined as one that keeps 
 
 并查集最常用的表示方式是森林，其中的每棵树表示一个集合，树中的节点表示对应集合中的元素。
 
-<img src="https://github.com/TBD2021/Salt-and-Computer-Science/blob/main/Algorithms/img/DisjointSet1.png" width=600px>
+<img src="https://github.com/TBD2021/Salt-and-Computer-Science/blob/main/Algorithms/img/DisjointSet1.png" width=400px>
 
 
