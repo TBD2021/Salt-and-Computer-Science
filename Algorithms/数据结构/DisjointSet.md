@@ -42,7 +42,7 @@ public class DisjointSet{
 
 1. **MakeSet(i)**: Create a set contain only one i.
 
-初始化时，将元素的父节点设为它自身。
+   初始化时，将元素的父节点设为它自身。
 
 ```Java
 public void makeSet(int i) {
@@ -63,7 +63,7 @@ public int find(int i) {
 
 3. **Union(i,j)**: Finding i in a set, return root index.
 
-合并操作，就是先找到两个集合的代表元素，然后将前者的父节点设为后者。(当然也可以将后者的父节点设为前者。)
+   合并操作，就是先找到两个集合的代表元素，然后将前者的父节点设为后者。(当然也可以将后者的父节点设为前者。)
 
 ```Java
 public void union(int i, int j) {
