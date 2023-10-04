@@ -81,7 +81,7 @@ A Graph denoted by *G=(V, E)*, is a non-linear data structure defined by a finit
   - 邻接矩阵(Adjacency Matrix)：一个 *V×V* 二维数组（矩阵），在二维数组中保存每两个节点间的联通关系。
   - 邻接表(Adjaceny List)：一个长度为 *V* 的哈希表，其中每个数据对的Key值存储节点，Value值存储从该节点出发的所有相邻节点。
 
-<img src="https://github.com/TBD2021/Salt-and-Computer-Science/blob/main/Algorithms/img/TopologicalSortDFS1.png" width=600px>
+<img src="https://github.com/TBD2021/Salt-and-Computer-Science/blob/main/Algorithms/img/Graph1.png" width=600px>
 
 
 - **对比：邻接矩阵与邻接表**
