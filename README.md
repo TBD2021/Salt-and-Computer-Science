@@ -17,12 +17,12 @@ Shipwrecked, Salt and Science of Computer
 - 算法思想
 - 数据结构
 
-  - **Data Structures**
+  - Data Structures
     
     - [树](Algorithms/数据结构/Tree.md)
     - [图](Algorithms/数据结构/Graph.md)
 
-  - **Advanced Data Structures**
+  - Advanced Data Structures
 
     - [并查集](Algorithms/数据结构/Disjoint_Set.md)
 
