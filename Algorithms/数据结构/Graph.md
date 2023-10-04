@@ -25,7 +25,8 @@
   - 图的深度优先遍历：用栈存储次序信息
   - 图的宽度优先遍历：用队列存储次序信息
   - 图搜索算法：DFS和BFS
-    - 图搜索算法和路径规划算法概述
+    - 概述
+    - DFS和BFS的遍历路径
     - 对比：DFS和BFS
 - 环检测与拓扑排序
   - 有向图的环检测
@@ -124,11 +125,12 @@ A Graph denoted by *G=(V, E)*, is a non-linear data structure defined by a finit
 
 ### 图搜索算法：DFS和BFS
 
-- **图搜索算法与路径规划算法概述**
+- **概述**
 
-图搜索算法（或者说图遍历算法）/Graph Search (or Graph Traversal) Algorithms，主要用于在图中进行搜索或者发现。它们会访问所有算法能够到达的节点，但是不会对搜索路径有优化需求。图搜索算法包含深度优先搜索DFS和宽度优先搜索BFS，它们往往是其他路径规划算法的基础。
+图搜索算法（或者说图遍历算法）/Graph Search (or Graph Traversal) Algorithms，主要用于在图中进行搜索或者发现。它们会访问所有算法能够到达的节点，但是不会对搜索路径有优化需求。而路径规划算法/Pathfinding Algorithms则用于在图中寻找给定的起点与终点之间符合特定要求的路径。
 
-路径规划算法/Pathfinding Algorithms用于在图中寻找给定的起点与终点之间符合要求的路径。
+图搜索算法包含深度优先搜索DFS和宽度优先搜索BFS。深度优先搜索DFS是从给定的起点在图中做深度优先遍历，宽度优先搜索BFS是从给定的起点在图中做宽度优先遍历。DFS和BFS做为两个最基础的图搜索算法，通常是其他路径规划算法的基础部件。
+
 
 - **DFS和BFS的遍历路径**
 
@@ -139,10 +141,6 @@ A Graph denoted by *G=(V, E)*, is a non-linear data structure defined by a finit
 [Animation of Graph BFS(Video)](https://www.youtube.com/watch?v=x-VTfcmrLEQ)
 
 - **对比：DFS和BFS**
-
-深度优先搜索DFS是从给定的起点在图中做深度优先遍历。广度优先遍历BFS是从给定的起点在图中做宽度优先遍历。
-
-DFS和BFS做为两个最基础的图搜索算法，通常是其他路径规划算法的基础部件：
 
 1. 正确性: 
     - 如果解存在，那么BFS一定能找到该解；而DFS不保证能找到该解。
@@ -208,30 +206,22 @@ DFS和BFS做为两个最基础的图搜索算法，通常是其他路径规划�
 当到达一个节点时，并不立即输出这个节点，而是先递归地对该节点的所有邻接节点调用拓扑排序算法，然后将这个节点压入结果栈。当所有节点都访问过以后，将结果栈输出。
 
 0. 创建一个栈来存放结果；创建一个数组来标记每个节点是Visited还是Not Visited，并初始化。
-1. 从任意一个节点A开始
-
-   1. 如果节点A是Not Visited，将节点A放入递归栈中。
-      
-      1. 访问节点A的所有后继邻接节点。
-          
-         1. 如果这些邻接节点中有已经存在于递归栈中的节点，说明该DAG有环，不能进行拓扑排序。
-         2. 否则，从这些邻接节点中任意选择一个节点B，递归调用拓扑排序算法。
-         3. 重复，直到节点A的没有Not visited的后继邻接节点。
-   
-      2. 当节点A没有Not Visited的后继邻接节点后，将节点A标记为Visited，并压入结果栈。
-         
-   2. 如果节点A是Visited，不用执行任何操作。
-      
+1. 从任意一个节点A开始，如果节点A是Visited，不用执行任何操作。如果节点A是Not Visited，将节点A放入递归栈中。 
+   1. 访问节点A的所有后继邻接节点。       
+      1. 如果这些邻接节点中有已经存在于递归栈中的节点，说明该DAG有环，不能进行拓扑排序。
+      2. 否则，从这些邻接节点中任意选择一个节点B，递归调用拓扑排序算法。
+      3. 重复，直到节点A的没有Not visited的后继邻接节点。
+   2. 当节点A没有Not Visited的后继邻接节点后，将节点A标记为Visited，并压入结果栈。
 2. 重复步骤1，直到所有节点都是Visited，并被压入结果栈。
 3. 将结果栈输出。 
 
-Example: Topological Sort using DFS
+**Example: Topological Sort using DFS**
 
 <img src="https://github.com/TBD2021/Salt-and-Computer-Science/blob/main/Algorithms/img/TopologicalSortDFS1.png" width=600px>
 
 **【算法-基于BFS】**
 
-> 这种利用节点入度的拓扑排序算法即为Kahn's Algorithm.
+> 这种利用节点入度的拓扑排序算法即为Kahn's Algorithm。
 
 0. 创建一个数组，用于记录图中所有节点的入度；创建一个队列，将入度为0的点放入队列中。
 1. 将队列中的头节点出队并放入结果序列，再将它及它的影响删除(发出的边删除，后继节点的入度-1)，将后继邻接节点中所有入度变为0的节点放入队列。
@@ -260,5 +250,6 @@ Example: Topological Sort using DFS
 ## 习题和参考资料
 
 **参考资料**
+
 - [Difference between BFS and DFS](https://www.geeksforgeeks.org/difference-between-bfs-and-dfs/?ref=lbp)
 - [Topological Sorting](https://www.geeksforgeeks.org/topological-sorting/)
