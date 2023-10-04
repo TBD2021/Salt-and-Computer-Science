@@ -29,5 +29,44 @@ In computer science, a disjoint set data structure is defined as one that keeps 
 
 <img src="https://github.com/TBD2021/Salt-and-Computer-Science/blob/main/Algorithms/img/DisjointSet2.png" width=300px>
 
+由此可以写出最简单的并查集代码：
 
+```Java
+public class DisjointSet{
+  int[] parent=new int[num];
+  public void makeSet(int i){ }
+  public int find(int i){ }
+  public void union(int i, int j){ }
+}
+```
 
+1. **MakeSet(i)**: Create a set contain only one i.
+
+初始化时，将元素的父节点设为它自身。
+
+```Java
+public void makeSet(int i) {
+  parent[i]=i;
+}
+```
+
+2. **Find(i)**: Finding i in a set, return root index.
+
+```Java
+public int find(int i) {
+  if(parent[i]==i)
+    return i;
+  else
+    return find(parent[i]); 
+}
+```
+
+3. **Union(i,j)**: Finding i in a set, return root index.
+
+合并操作，就是先找到两个集合的代表元素，然后将前者的父节点设为后者。(当然也可以将后者的父节点设为前者。)
+
+```Java
+public void union(int i, int j) {
+  parent[i]=find(j);
+}
+```
