@@ -23,4 +23,6 @@ In computer science, a disjoint set data structure is defined as one that keeps 
 
 <img src="https://github.com/TBD2021/Salt-and-Computer-Science/blob/main/Algorithms/img/DisjointSet1.png" width=400px>
 
+- 实现
+
 
