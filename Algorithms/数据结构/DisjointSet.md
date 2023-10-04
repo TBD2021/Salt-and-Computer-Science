@@ -21,7 +21,9 @@ In computer science, a disjoint set data structure is defined as one that keeps 
 
 - **树型实现**
 
-并查集最常用的表示方式是森林，其中的每棵树表示一个集合，树中的节点表示对应集合中的元素，而树的根节点则是对应集合的代表元素。用树来实现并查集，那么最基本的部件是节点和指向其父节点的指针，可以用一个数组parent[ ]实现，其中parent\[i\]是节点i的父节点，如果节点i是树的根节点，那么它的父节点设为它自身。
+并查集最常用的表示方式是森林，其中的每棵树表示一个集合，树中的节点表示对应集合中的元素，而树的根节点则是对应集合的代表元素。
+
+用树来实现并查集，最基本的部件是节点和指向其父节点的指针，可以用一个数组parent[]实现，其中parent\[i\]是节点i的父节点，如果节点i是树的根节点，那么它的父节点设为它自身。
 
 <img src="https://github.com/TBD2021/Salt-and-Computer-Science/blob/main/Algorithms/img/DisjointSet2.png" width=600px>
 
