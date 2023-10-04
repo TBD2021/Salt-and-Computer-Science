@@ -115,6 +115,7 @@ A Graph denoted by *G=(V, E)*, is a non-linear data structure defined by a finit
 3. 重复步骤1、2，直到栈变成空栈。
 
 ### 宽度优先遍历
+
 图的宽度优先遍历(Breadth First Traversal, BFS)算法与树的BFS算法相近。关键的不同在于，由于图中可能有环，图的BFS需要记录一个节点是否已经被访问过（Visted/Not visted），以避免对一个节点反复访问。
 
 **【算法-非递归实现】**
@@ -130,7 +131,6 @@ A Graph denoted by *G=(V, E)*, is a non-linear data structure defined by a finit
 图搜索算法（或者说图遍历算法）/Graph Search (or Graph Traversal) Algorithms，主要用于在图中进行搜索或者发现。它们会访问所有算法能够到达的节点，但是不会对搜索路径有优化需求。而路径规划算法/Pathfinding Algorithms则用于在图中寻找给定的起点与终点之间符合特定要求的路径。
 
 图搜索算法包含深度优先搜索DFS和宽度优先搜索BFS。深度优先搜索DFS是从给定的起点在图中做深度优先遍历，宽度优先搜索BFS是从给定的起点在图中做宽度优先遍历。DFS和BFS做为两个最基础的图搜索算法，通常是其他路径规划算法的基础部件。
-
 
 - **DFS和BFS的遍历路径**
 
