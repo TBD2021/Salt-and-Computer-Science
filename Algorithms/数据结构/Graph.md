@@ -17,8 +17,8 @@
     - 有权图与无权图
     - 简单图与多重图
     - 稠密图与稀疏图
-  - 图的表示与底层实现
-    - 邻接矩阵与邻接表
+- 图的表示与底层实现
+  - 邻接矩阵与邻接表
     - 对比：邻接矩阵与邻接表
 - 图的遍历和图搜索算法
   - 图的深度优先遍历：用栈存储次序信息
@@ -72,9 +72,9 @@ A Graph denoted by *G=(V, E)*, is a non-linear data structure defined by a finit
   - 稠密图(Dense Graph): A graph with many edges compared to the number of vertices.
   - 稀疏图(Sparse Graphs): A graph with relatively few edges compared to the number of vertices.
 
-### 图的表示与底层实现
+## 图的表示与底层实现
 
-- **邻接矩阵与邻接表**
+### 邻接矩阵与邻接表
 
   Assume the graph *G=(V, E)* contains *|V|* vertices and *|E|* edges.  
   - 邻接矩阵(Adjacency Matrix)：一个 *V×V* 二维数组（矩阵），在二维数组中保存每两个节点间的联通关系。
