@@ -70,3 +70,9 @@ public void union(int i, int j) {
   parent[i]=find(j);
 }
 ```
+
+Time Complexity:
+|||
+|---|---|
+|Union( )|O(1)|
+|Find( )|O(depth)|
