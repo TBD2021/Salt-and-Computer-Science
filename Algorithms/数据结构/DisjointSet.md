@@ -72,7 +72,7 @@ public void union(int i, int j) {
 ```
 
 Time Complexity:
-|||
+|Operation|Tree Based Disjoint Set|
 |---|---|
 |Union( )|O(1)|
 |Find( )|O(depth)|
