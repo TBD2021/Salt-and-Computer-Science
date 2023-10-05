@@ -21,7 +21,9 @@ In computer science, a disjoint set data structure is defined as one that keeps 
 
 ### 并查集的表示与底层实现
 
-- **树型实现**
+- **树型并查集（Tree Based Disjoint Set）**
+
+**结构**
 
 并查集最常用的表示方式是森林，其中的每棵树表示一个集合，树中的节点表示对应集合中的元素，而树的根节点则是对应集合的代表元素。
 
@@ -29,50 +31,43 @@ In computer science, a disjoint set data structure is defined as one that keeps 
 
 <img src="https://github.com/TBD2021/Salt-and-Computer-Science/blob/main/Algorithms/img/DisjointSet1.svg" width=400px>
 
-由此可以写出最简单的并查集代码：
-
-```Java
-public class DisjointSet{
-  int[] parent=new int[num];
-  public void makeSet(int i){ }
-  public int find(int i){ }
-  public void union(int i, int j){ }
-}
-```
+**操作**
 
 1. **MakeSet(i)**: Create a set contain only one i.
-
+   
    初始化时，将元素的父节点设为它自身。
 
-```Java
-public void makeSet(int i) {
-  parent[i]=i;
-}
-```
-
 2. **Find(i)**: Finding i in a set, return root index.
-
-```Java
-public int find(int i) {
-  if(parent[i]==i)
-    return i;
-  else
-    return find(parent[i]); 
-}
-```
 
 3. **Union(i,j)**: Finding i in a set, return root index.
 
    合并操作，就是先找到两个集合的代表元素，然后将前者的父节点设为后者。(当然也可以将后者的父节点设为前者。)
-
-```Java
-public void union(int i, int j) {
-  parent[i]=find(j);
-}
-```
 
 Time Complexity:
 |Operation|Tree Based Disjoint Set|
 |---|---|
 |Union( )|O(1)|
 |Find( )|O(depth)|
+   
+
+由此可以写出最简单的并查集代码：
+
+```Java
+// Tree Based Disjoint Set
+public class DisjointSet{
+  int[] parent=new int[num];
+  public void makeSet(int i){
+    parent[i]=i;
+  }
+  public int find(int i){
+    if(parent[i]==i)
+      return i;
+    else
+      return find(parent[i]); 
+  }
+  public void union(int i, int j){
+    parent[i]=find(j);
+  }
+}
+```
+
