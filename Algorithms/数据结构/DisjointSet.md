@@ -19,11 +19,11 @@ In computer science, a disjoint set data structure is defined as one that keeps 
 并查集的核心思想在于，用集合中的一个元素来代表这个集合。
 ```
 
-### 并查集的表示与底层实现
+## 并查集的表示与底层实现
 
-- **树型并查集（Tree Based Disjoint Set）**
+### 树型并查集（Tree Based Disjoint Set）
 
-**结构**
+- **结构**
 
 并查集最常用的表示方式是森林，其中的每棵树表示一个集合，树中的节点表示对应集合中的元素，而树的根节点则是对应集合的代表元素。
 
@@ -31,7 +31,7 @@ In computer science, a disjoint set data structure is defined as one that keeps 
 
 <img src="https://github.com/TBD2021/Salt-and-Computer-Science/blob/main/Algorithms/img/DisjointSet1.svg" width=400px>
 
-**操作**
+- **操作**
 
 1. **MakeSet(i)**: Create a set contain only one i.
    
