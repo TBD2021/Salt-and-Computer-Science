@@ -87,7 +87,7 @@ A Graph denoted by *G=(V, E)*, is a non-linear data structure defined by a finit
 
 时间复杂度:
 
-|Action|Adijacency Matrix|Adjacency List|
+|Operation|Adijacency Matrix|Adjacency List|
 |---|---|---|
 |Store graph|O(V<sup>2</sup>)|O(V+E)|
 |Add vertex|O(V<sup>2</sup>)|O(1)|
