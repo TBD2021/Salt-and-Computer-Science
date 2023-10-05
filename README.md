@@ -2,7 +2,7 @@
 
 ## Shipwrecked
 
-Shipwrecked, Salt and Science of Computer
+Shipwrecked, Salt and Computer Science
 
 <details>
 <summary> Later Updates </summary>
