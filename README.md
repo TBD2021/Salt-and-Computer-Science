@@ -4,6 +4,8 @@
 
 Shipwrecked, Salt and Computer Science
 
+<img src="https://github.com/TBD2021/Salt-and-Computer-Science/blob/main/Algorithms/img/Graph1.png" width=600px>
+
 <details>
 <summary> Later Updates </summary>
 - 同步数据结构目录
