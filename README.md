@@ -2,10 +2,9 @@
 
 ## Shipwrecked
 
-<img src="https://github.com/TBD2021/Salt-and-Computer-Science/blob/main/Algorithms/img/Salt_and_Sanctuary1.png" width=800px>
+<img src="https://github.com/TBD2021/Salt-and-Computer-Science/blob/main/Algorithms/img/SaltAndSanctuary1.png" width=800px>
 
 **A doomed sailor is shipwrecked on an uncharted island. Update skills, find a handy weapon, claim sanctuaries and walkthough the mystery to face the bosses.**
-
 
 <details>
 <summary> Later Updates </summary>
