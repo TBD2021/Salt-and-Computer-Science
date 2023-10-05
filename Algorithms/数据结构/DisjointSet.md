@@ -16,7 +16,7 @@ In computer science, a disjoint set data structure is defined as one that keeps 
 - 查询(Find)：查询某元素所属子集的代表元素。这也可以用来判断两个元素是否属于同一个子集。
 
 ```
-并查集的核心思想在于，用集合中的一个元素来代表这个集合。
+并查集是Union-Find Set的直译。它的核心思想在于，用集合中的一个元素来代表这个集合。
 ```
 
 ## 并查集的表示与底层实现
@@ -72,4 +72,6 @@ public class DisjointSet{
 }
 ```
 
-### kkkk
+### 优化：Path Compression and Union by Rank/Size
+
+并查集的效率严重依赖于树的高度。
