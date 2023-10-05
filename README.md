@@ -2,9 +2,7 @@
 
 ## Shipwrecked
 
-Shipwrecked, Salt and Computer Science
-
-<img src="https://github.com/TBD2021/Salt-and-Computer-Science/blob/main/Algorithms/img/Salt_and_Sanctuary1.png" width=800px>
+<img src="https://github.com/TBD2021/Salt-and-Computer-Science/blob/main/Algorithms/img/Salt_and_Sanctuary1.png" width=1000px>
 
 <details>
 <summary> Later Updates </summary>
