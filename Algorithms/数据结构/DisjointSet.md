@@ -11,7 +11,7 @@ In mathematics, two sets are called disjoint sets if they have no element in com
 
 In computer science, a disjoint set data structure is defined as one that keeps track of a set of elements partitioned into a number of disjoint (non-overlapping) subsets. It provides near-constant-time operations to add new sets, to merge existing sets, and to determine whether elements are in the same set:
 
-- 新建子集(Add new sets)
+- 新建子集(MakeSet): Add a new element into a new set containing only the new element.
 - 合并(Union)：将两个子集合并为一个子集。
 - 查询(Find)：查询某元素所属子集的代表元素。这也可以用来判断两个元素是否属于同一个子集。
 
@@ -37,9 +37,11 @@ In computer science, a disjoint set data structure is defined as one that keeps 
    
    初始化时，将元素的父节点设为它自身。
 
-2. **Find(i)**: Finding i in a set, return root index.
+2. **Find(i)**: Finding i in a set, return its representatives.
 
-3. **Union(i,j)**: Finding i in a set, return root index.
+   返回代表元素也就是返回树的根节点。
+
+3. **Union(i,j)**: Merge two sets containing i and j.
 
    合并操作，就是先找到两个集合的代表元素，然后将前者的父节点设为后者。(当然也可以将后者的父节点设为前者。)
 
@@ -49,7 +51,6 @@ Time Complexity:
 |Union( )|O(1)|
 |Find( )|O(depth)|
    
-
 由此可以写出最简单的并查集代码：
 
 ```Java
@@ -71,3 +72,4 @@ public class DisjointSet{
 }
 ```
 
+### kkkk
