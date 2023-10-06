@@ -54,7 +54,7 @@ In computer science, a disjoint set data structure is defined as one that keeps 
 
    合并操作，就是先找到两个集合的代表元素，然后将前者的父节点设为后者。(当然也可以将后者的父节点设为前者。)
 
-**Time Complexity** :
+Time Complexity:
 
 |Operation|Tree Based Disjoint Set|
 |---|---|
@@ -94,9 +94,7 @@ public class DisjointSet{
 
 <img src="https://github.com/TBD2021/Salt-and-Computer-Science/blob/main/Algorithms/img/DisjointSetUnionBySize1.png" width=800px>
 
-Time complexity: 
-
-O(logN) without Path Compression.
+Time complexity: O(logN) without Path Compression.
 
 - **按秩合并（Union by rank）**
 
@@ -104,9 +102,7 @@ O(logN) without Path Compression.
 
 <img src="https://github.com/TBD2021/Salt-and-Computer-Science/blob/main/Algorithms/img/DisjointSetUnionBySize2.png" width=800px>
 
-Time complexity: 
-
-O(logN) without Path Compression.
+Time complexity: O(logN) without Path Compression.
 
 - **路径压缩（Path Compression）**
 
@@ -114,9 +110,7 @@ O(logN) without Path Compression.
 
 <img src="https://github.com/TBD2021/Salt-and-Computer-Science/blob/main/Algorithms/img/DisjointSet4.png" width=400px>
 
-Time complexity: 
-
-路径压缩可以将时间复杂度优化到接近常数时间。
+Time complexity: 路径压缩可以将时间复杂度优化到接近常数时间。
 
 ### 时间复杂度
 
