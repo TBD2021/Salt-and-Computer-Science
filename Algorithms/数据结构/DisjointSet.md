@@ -125,6 +125,6 @@ Time Complexity (Worst Case):
 |Operation|Tree Based Disjoint Set|Union by Rank/Size without Path Compression|Union by Rank/Size with Path Compression|
 |---|---|---|---|
 |Union( )|O(1)|O(1)|O(1)|
-|Find( )|O(N)|O(logN)|O(\alpha(N))|
+|Find( )|O(N)|O(logN)|O(α(N))|
 
-> \alpha 为阿克曼函数的反函数，其增长极其缓慢，可以认为是一个很小的常数。
+> α函数为阿克曼函数的反函数，其增长极其缓慢，可以认为是一个很小的常数。
