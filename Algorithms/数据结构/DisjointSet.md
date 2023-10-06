@@ -103,14 +103,13 @@ O(logN) without Path Compression.
 
 <img src="https://github.com/TBD2021/Salt-and-Computer-Science/blob/main/Algorithms/img/DisjointSetUnionBySize2.png" width=800px>
 
-
 Time complexity: 
 
 O(logN) without Path Compression.
 
 - **路径压缩（Path Compression）**
 
-路径压缩是在查询操作过程中，把沿途的每个节点的父节点都设为根节点。
+路径压缩是把树展平为高度只有1的树。要实现路径压缩，只需在查询操作过程中，把沿途的每个节点的父节点都设为根节点。
 
 <img src="https://github.com/TBD2021/Salt-and-Computer-Science/blob/main/Algorithms/img/DisjointSet4.png" width=400px>
 
