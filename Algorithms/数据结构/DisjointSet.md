@@ -2,7 +2,15 @@
 
 - 基础概念
   - 并查集的定义
-
+- 并查集的表示与底层实现
+  - 树型并查集
+    - 结构
+    - 操作
+  - 优化：按秩/大小合并和路径压缩（Path Compression）
+    - 按大小合并（Union by Size）
+    - 按秩合并（Union by Rank）
+    - 路径压缩（Path Compression）
+  
 ## 基础概念
 
 ### 并查集的定义
@@ -72,6 +80,12 @@ public class DisjointSet{
 }
 ```
 
-### 优化：Path Compression and Union by Rank/Size
+### 优化：按秩/大小合并（Union by Rank/Size）和路径压缩（Path Compression）
 
-并查集的效率严重依赖于树的高度。
+并查集的效率严重依赖于树的高度。按秩合并（Union by rank）和按大小合并（Union by size）都是通过控制树的高度来提高并查集的效率的。它们除了存储每个节点的父节点指针，还存储了其他信息用于在并查集执行合并操作时决定哪棵树的节点成为父节点，从而避免树的高度过高。
+
+- **Union by size**
+
+
+
+
