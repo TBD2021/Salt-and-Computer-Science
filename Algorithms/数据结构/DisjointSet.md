@@ -102,3 +102,11 @@ Time complexity: O(logN) without Path Compression.
 
 
 Time complexity: O(logN) without Path Compression.
+
+- **路径压缩（Path Compression）**
+
+路径压缩是在查询操作过程中，把沿途的每个节点的父节点都设为根节点。
+
+
+
+路径压缩可以将时间复杂度优化到接近常数时间。
