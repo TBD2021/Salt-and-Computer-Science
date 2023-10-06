@@ -107,7 +107,7 @@ Time complexity: O(logN) without Path Compression.
 
 路径压缩是在查询操作过程中，把沿途的每个节点的父节点都设为根节点。
 
-<img src="https://github.com/TBD2021/Salt-and-Computer-Science/blob/main/Algorithms/img/DisjointSet4.png" width=600px>
+<img src="https://github.com/TBD2021/Salt-and-Computer-Science/blob/main/Algorithms/img/DisjointSet4.png" width=400px>
 
 
 路径压缩可以将时间复杂度优化到接近常数时间。
