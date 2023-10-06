@@ -10,6 +10,7 @@
     - 按大小合并（Union by Size）
     - 按秩合并（Union by Rank）
     - 路径压缩（Path Compression）
+  - 时间复杂度
   
 ## 基础概念
 
@@ -117,7 +118,7 @@ Time complexity:
 
 路径压缩可以将时间复杂度优化到接近常数时间。
 
-### Time Complexity
+### 时间复杂度
 
 Time Complexity (Worst Case):
 
