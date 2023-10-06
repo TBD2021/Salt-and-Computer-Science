@@ -86,11 +86,16 @@ public class DisjointSet{
 
 并查集的两种优化手段，按秩合并（Union by rank）和按大小合并（Union by size），都是通过在合并操作中控制树的高度，实现在合并操作的时间复杂度维持在O(1)的同时，将查询操作的时间复杂度优化到O(logN)。它们除了记录每个节点的父节点指针，还记录了节点的其他信息，用于在合并操作中决定哪个集合的根节点成为合并后集合的根节点，从而避免树的高度过高。
 
-- **Union by size**
+- **按大小合并（Union by size）**
 
 在按大小合并的算法中，除了用数组parent[ ]来记录每个节点的父节点指针，还用数组size[ ]来记录每个节点所在的树的大小（也就是每个元素所在集合的元素数量）。当合并两个集合时，如果两棵树大小不同，将size较小的树连接到size较大的树的根节点下面；如果两棵树大小相同，则无所谓两棵树的连接方式。
 
 <img src="https://github.com/TBD2021/Salt-and-Computer-Science/blob/main/Algorithms/img/DisjointSetUnionBySize1.png" width=800px>
 
+Time complexity: O(logN) without Path Compression.
 
-Time complexity: O(log n) without Path Compression.
+- **按秩合并（Union by rank）**
+
+在按秩合并的算法中，除了用数组parent[ ]来记录每个节点的父节点指针，还用数组rank[ ]来记录每个节点的秩（节点的秩指的是该节点到它最远的后代叶子节点的距离）。初始化时，每个节点的秩设为0。当合并两个集合时，如果两棵树的秩不同，将秩较小的树连接到秩较大的树的根节点下面；如果两棵树的秩相同，则无所谓两棵树的连接方式。
+
+Time complexity: O(logN) without Path Compression.
