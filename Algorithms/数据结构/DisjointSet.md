@@ -11,6 +11,7 @@
     - 按秩合并（Union by Rank）
     - 路径压缩（Path Compression）
   - 时间复杂度
+  - 习题和参考资料
   
 ## 基础概念
 
@@ -122,3 +123,5 @@ Time Complexity (Worst Case):
 |Find( )|O(N)|O(logN)|O(α(N))|
 
 > α函数为阿克曼函数的反函数，其增长极其缓慢，可以认为是一个很小的常数。
+
+### 习题和参考资料
