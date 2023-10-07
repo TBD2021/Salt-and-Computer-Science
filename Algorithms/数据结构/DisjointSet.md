@@ -100,7 +100,7 @@ Time complexity: O(logN) without Path Compression.
 
 在按秩合并的算法中，除了用数组parent[ ]来记录每个节点的父节点指针，还用数组rank[ ]来记录每个节点的秩（节点的秩指的是该节点到它最远的后代叶子节点的距离）。初始化时，每个节点的秩设为0。当合并两个集合时，如果两棵树的秩不同，将秩较小的树连接到秩较大的树的根节点下面；如果两棵树的秩相同，则无所谓两棵树的连接方式。
 
-<img src="https://github.com/TBD2021/Salt-and-Computer-Science/blob/main/Algorithms/img/DisjointSet3.svg" width=800px>
+<img src="https://github.com/TBD2021/Salt-and-Computer-Science/blob/main/Algorithms/img/DisjointSet3.svg" width=400px>
 
 Time complexity: O(logN) without Path Compression.
 
