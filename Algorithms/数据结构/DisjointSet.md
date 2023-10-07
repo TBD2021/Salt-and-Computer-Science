@@ -92,7 +92,7 @@ public class DisjointSet{
 
 在按大小合并的算法中，除了用数组parent[ ]来记录每个节点的父节点指针，还用数组size[ ]来记录每个节点所在的树的大小（也就是每个元素所在集合的元素数量）。当合并两个集合时，如果两棵树大小不同，将size较小的树连接到size较大的树的根节点下面；如果两棵树大小相同，则无所谓两棵树的连接方式。
 
-<img src="https://github.com/TBD2021/Salt-and-Computer-Science/blob/main/Algorithms/img/DisjointSetUnionBySize1.png" width=800px>
+<img src="https://github.com/TBD2021/Salt-and-Computer-Science/blob/main/Algorithms/img//DisjointSet2.png" width=400px>
 
 Time complexity: O(logN) without Path Compression.
 
