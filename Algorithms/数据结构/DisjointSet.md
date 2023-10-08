@@ -3,7 +3,7 @@
 - 基础概念
   - 并查集的定义
 - 并查集的表示与底层实现
-  - 树型并查集
+  - 树型并查集(Tree Based Disjoint Set)
     - 结构
     - 操作
   - 优化：按秩/大小合并和路径压缩（Path Compression）
