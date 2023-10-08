@@ -16,17 +16,22 @@
 ### 算法与数据结构/Algorithm and Data Structure
 
 - 算法设计
+
+  **Charpt 1**
   - 为什么需要算法
   - 算法复杂度
-- 算法思想
 - 数据结构
+
+  **Charpt 2**
+  - 数据结构：数据的组织形式与数据的存储形式
   
-  Part I  
+  **Charpt 3: 基础数据结构**
   - [树](Algorithms/数据结构/Tree.md)
   - [图](Algorithms/数据结构/Graph.md)
     
-  Part II
+  **Charpt 4: 高级数据结构**
   - [并查集](Algorithms/数据结构/DisjointSet.md)
+- 算法思想
 - 古典问题
   - [图搜索算法：DFS and BFS](Algorithms/InClassicProblems/图搜索算法：DFS&BFS.md)
     - 泛洪算法/Flood Fill Algorithm
