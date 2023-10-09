@@ -18,7 +18,7 @@
 #### 为什么要设计算法与数据结构
 
 - **Charpt 1: 算法设计**
-  - [为什么需要算法](Algorithms/OverView/为什么需要算法.md)
+  - [为什么需要算法设计](Algorithms/OverView/为什么需要算法设计.md)
   - 算法复杂度
 
 - **Charpt 2: 数据结构**
