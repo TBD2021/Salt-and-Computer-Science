@@ -15,7 +15,7 @@
 
 ### 算法与数据结构/Algorithm and Data Structure
 
-#### 为什么要设计算法与数据结构
+#### 算法与数据结构的设计方法
 
 - **Charpt 1: 算法设计**
   - [为什么需要算法设计](Algorithms/OverView/为什么需要算法设计.md)
