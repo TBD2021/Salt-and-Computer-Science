@@ -41,6 +41,9 @@
     - 岛屿问题/the Number of Islands
   - [图搜索算法：拓扑排序](Algorithms/InClassicProblems/图搜索算法：拓扑排序.md)
     - 任务依赖性/Task Dependencies
+- 并行计算
+  - 并查集
+    - 岛屿问题的并行计算 
 
 #### 练习
 - [算法题解](Algorithms/算法题解.md)
