@@ -8,7 +8,7 @@
 
 <details>
 <summary> Later Updates </summary>
-- 同步目录
+- 同步目录 
 - 循环不变式的正确性，～～～ 数学归纳法
 </details>
 
@@ -17,9 +17,9 @@
 ### 算法与数据结构/Algorithm and Data Structure
 
 #### 基础
-
-- **Charpt 1: 算法分析**
   - [为什么需要算法](Algorithms/OverView/为什么需要算法.md)
+- **Charpt 1: 算法分析**
+
   - 算法复杂度
 
 - **Charpt 2: 数据结构**
@@ -35,8 +35,10 @@
   - [并查集](Algorithms/数据结构/DisjointSet.md)
  
 #### 算法思想
-#### 排序算法
-#### 简明应用
+#### 排序
+- **Charpt 6: 排序算法**
+  - 排序算法综述
+#### 部分算法应用问题
 
 - 古典问题
   - [图搜索算法：DFS and BFS](Algorithms/InClassicProblems/图搜索算法：DFS&BFS.md)
@@ -51,8 +53,8 @@
 
 
 #### 并行算法
-  - 并查集
-    - 岛屿问题的并行计算 
+>  - 并查集
+>    - 岛屿问题的并行计算 
 
 #### 练习
 
