@@ -8,14 +8,15 @@
 
 <details>
 <summary> Later Updates </summary>
-- 同步数据结构目录
+- 同步目录
+- 循环不变式的正确性，～～～ 数学归纳法
 </details>
 
 ## Salt
 
 ### 算法与数据结构/Algorithm and Data Structure
 
-#### 算法与数据结构的设计方法
+#### 算法与数据结构的设计方法论
 
 - **Charpt 1: 算法设计**
   - [为什么需要算法设计](Algorithms/OverView/为什么需要算法设计.md)
@@ -34,18 +35,27 @@
   - [并查集](Algorithms/数据结构/DisjointSet.md)
  
 #### 算法思想
-#### 应用实例
+#### 排序算法
+#### 简明应用
+
 - 古典问题
   - [图搜索算法：DFS and BFS](Algorithms/InClassicProblems/图搜索算法：DFS&BFS.md)
     - 泛洪算法/Flood Fill Algorithm
     - 岛屿问题/the Number of Islands
   - [图搜索算法：拓扑排序](Algorithms/InClassicProblems/图搜索算法：拓扑排序.md)
     - 任务依赖性/Task Dependencies
-- 并行计算
+
+- 数组与矩阵
+- 字符串处理
+- 位运算与数学算法
+
+
+#### 并行算法
   - 并查集
     - 岛屿问题的并行计算 
 
 #### 练习
+
 - [算法题解](Algorithms/算法题解.md)
 
 
