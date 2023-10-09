@@ -1,4 +1,4 @@
-# Salt-and-Computer-Science
+# Salt and Computer Science
 
 ## Shipwrecked
 
