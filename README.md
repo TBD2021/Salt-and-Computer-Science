@@ -38,8 +38,7 @@
   - [并查集](Algorithms/数据结构/DisjointSet.md)
 
 #### 算法思想
-   - Other Topic
-     - Loop Invariant 
+
 #### 排序
 
 - **排序算法**
@@ -50,6 +49,7 @@
     - O(n<sup>2</sup>)算法：插入、选择、冒泡
     - O(nlogn)算法：快速排序、归并排序、堆排序
   - 非比较排序算法
+    
 #### 部分算法应用问题
 
 - 古典问题
@@ -58,15 +58,19 @@
     - 岛屿问题(the Number of Islands)
   - [图搜索算法：拓扑排序](Algorithms/InClassicProblems/图搜索算法：拓扑排序.md)
     - 任务依赖性(Task Dependencies)
-
 - 数组与矩阵
 - 字符串处理
 - 位运算与数学算法
 
 
 #### 并行算法
+
 >  - 并查集
 >    - 岛屿问题的并行计算 
+
+#### Optional Topic
+
+     - Loop Invariant 
 
 #### 练习
 
