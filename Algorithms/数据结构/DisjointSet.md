@@ -58,7 +58,7 @@ In computer science, a disjoint set data structure is defined as one that keeps 
 时间复杂度:
 
 |Operation|Tree Based Disjoint Set|
-|---|---|
+|:---:|:---:|
 |Union( )|O(1)|
 |Find( )|O(depth)|
    
