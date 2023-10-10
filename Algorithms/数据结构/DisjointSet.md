@@ -55,7 +55,7 @@ In computer science, a disjoint set data structure is defined as one that keeps 
 
    合并操作，就是先找到两个集合的代表元素，然后将前者的父节点设为后者。(当然也可以将后者的父节点设为前者。)
 
-Time Complexity:
+时间复杂度:
 
 |Operation|Tree Based Disjoint Set|
 |---|---|
