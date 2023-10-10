@@ -8,8 +8,10 @@
 
 <details>
 <summary> Later Updates </summary>
-- 同步目录 
-- 循环不变式的正确性，～～～ 数学归纳法
+
+  - 同步目录：图
+  - 循环不变式
+    
 </details>
 
 ## Salt
