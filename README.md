@@ -34,7 +34,8 @@
   - [并查集](Algorithms/数据结构/DisjointSet.md)
 
 #### 算法思想
-
+   - Other Topic
+     - Loop Invariant 
 #### 排序
 
 - **排序算法**
@@ -49,10 +50,10 @@
 
 - 古典问题
   - [图搜索算法：DFS and BFS](Algorithms/InClassicProblems/图搜索算法：DFS&BFS.md)
-    - 泛洪算法/Flood Fill Algorithm
-    - 岛屿问题/the Number of Islands
+    - 泛洪算法(Flood Fill Algorithm)
+    - 岛屿问题(the Number of Islands)
   - [图搜索算法：拓扑排序](Algorithms/InClassicProblems/图搜索算法：拓扑排序.md)
-    - 任务依赖性/Task Dependencies
+    - 任务依赖性(Task Dependencies)
 
 - 数组与矩阵
 - 字符串处理
