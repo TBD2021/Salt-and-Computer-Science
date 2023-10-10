@@ -85,11 +85,13 @@ public class DisjointSet{
 
 ### 优化：按秩/大小合并（Union by Rank/Size）和路径压缩（Path Compression）
 
-并查集的查询效率严重依赖于树的高度，worst case，查询操作的时间复杂度可以恶化到O(N)。
+并查集的查询效率严重依赖于树的高度，worst case，查询操作的时间复杂度可以恶化到O(n)。
 
-并查集的两种优化手段，按秩合并（Union by rank）和按大小合并（Union by size），都是通过在合并操作中控制树的高度，实现在合并操作的时间复杂度维持在O(1)的同时，将查询操作的时间复杂度优化到O(logN)。它们除了记录每个节点的父节点指针，还记录了节点的其他信息，用于在合并操作中决定哪个集合的根节点成为合并后集合的根节点，从而避免树的高度过高。
+并查集的按秩合并（Union by rank）和按大小合并（Union by size），都是通过在合并操作中控制树的高度，在将合并操作的时间复杂度维持在O(1)的同时，把查询操作的时间复杂度优化到O(log n)。它们除了记录每个节点的父节点指针，还记录了节点的其他信息，用于在合并操作中决定哪个集合的根节点成为合并后集合的根节点，从而避免树的高度过高。
 
-- **按大小合并（Union by size）**
+路径压缩（Path Compression）则是在查询操作中，将路径上的所有节点都改为直接连接到根节点，从而降低树的高度。
+
+- **按大小合并**
 
 在按大小合并的算法中，除了用数组parent[ ]来记录每个节点的父节点指针，还用数组size[ ]来记录每个节点所在的树的大小（也就是每个元素所在集合的元素数量）。当合并两个集合时，如果两棵树大小不同，将size较小的树连接到size较大的树的根节点下面；如果两棵树大小相同，则无所谓两棵树的连接方式。
 
@@ -97,7 +99,7 @@ public class DisjointSet{
 
 Time complexity: O(logN) without Path Compression.
 
-- **按秩合并（Union by rank）**
+- **按秩合并**
 
 在按秩合并的算法中，除了用数组parent[ ]来记录每个节点的父节点指针，还用数组rank[ ]来记录每个节点的秩（节点的秩指的是该节点到它最远的后代叶子节点的距离）。初始化时，每个节点的秩设为0。当合并两个集合时，如果两棵树的秩不同，将秩较小的树连接到秩较大的树的根节点下面；如果两棵树的秩相同，则无所谓两棵树的连接方式。
 
@@ -105,9 +107,9 @@ Time complexity: O(logN) without Path Compression.
 
 Time complexity: O(logN) without Path Compression.
 
-- **路径压缩（Path Compression）**
+- **路径压缩**
 
-路径压缩是把树展平为高度只有1的树。要实现路径压缩，只需在查询操作过程中，把沿途的每个节点的父节点都设为根节点。
+要实现路径压缩，只需在查询操作过程中，把沿途的每个节点的父节点都设为根节点。
 
 <img src="https://github.com/TBD2021/Salt-and-Computer-Science/blob/main/Algorithms/img/DisjointSet4.svg" width=400px>
 
@@ -117,10 +119,10 @@ Time complexity: 路径压缩可以将时间复杂度优化到接近常数时间
 
 Time Complexity (Worst Case):
 
-|Operation|Tree Based Disjoint Set|Union by Rank/Size without Path Compression|Union by Rank/Size with Path Compression|
-|---|---|---|---|
+|Operation|Tree Based Disjoint Set|Union by Rank/Size <br> without Path Compression|Union by Rank/Size <br> with Path Compression|
+|:---:|:---:|:---:|:---:|
 |Union( )|O(1)|O(1)|O(1)|
-|Find( )|O(N)|O(logN)|O(α(N))|
+|Find( )|O(n)|O(log n)|O(α(n))|
 
 > α函数为阿克曼函数（Ackermann function）的反函数。阿克曼函数A(n)增长极为迅速，做为其反函数的α(n)则增长极其缓慢，对于自然界中的绝大多数可能出现的数值n，其α(n)不超过5。
 
