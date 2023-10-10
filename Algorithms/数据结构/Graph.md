@@ -95,7 +95,7 @@ A Graph denoted by *G=(V, E)*, is a non-linear data structure defined by a finit
 |Add edge|O(1)|O(1)|
 |Remove vertex|O(V<sup>2</sup>)|O(E)|
 |Remove Edge|O(1)|O(V)|
-|判断已知位置的两个节点是否邻接|O(1)|O(V)|
+|判断已知位置的<br>两个节点是否邻接|O(1)|O(V)|
 
 结论:
 
@@ -130,13 +130,13 @@ A Graph denoted by *G=(V, E)*, is a non-linear data structure defined by a finit
 
 - **概述**
 
-图搜索算法（或者说图遍历算法）/Graph Search (or Graph Traversal) Algorithms，主要用于在图中进行搜索或者发现。它们会访问所有算法能够到达的节点，但是不会对搜索路径有优化需求。而路径规划算法/Pathfinding Algorithms则用于在图中寻找给定的起点与终点之间符合特定要求的路径。
+图搜索算法（或者说图遍历算法）(Graph Search (or Graph Traversal) Algorithms)，主要用于在图中进行搜索或者发现。它们会访问所有算法能够到达的节点，但是不会对搜索路径有优化需求。而路径规划算法(Pathfinding Algorithms)则用于在图中寻找给定的起点与终点之间符合特定要求的路径。
 
 图搜索算法包含深度优先搜索DFS和宽度优先搜索BFS。深度优先搜索DFS是从给定的起点在图中做深度优先遍历，宽度优先搜索BFS是从给定的起点在图中做宽度优先遍历。DFS和BFS做为两个最基础的图搜索算法，通常是其他路径规划算法的基础部件。
 
 - **DFS和BFS的遍历路径**
 
-在DFS和BFS的遍历过程中，节点有3种标记状态：已访问过（Visited Nodes），未访问过（Not Visited Nodes），以及还在递归栈中的（On Path Nodes）。
+在DFS和BFS的遍历过程中，节点有3种标记状态：已访问过（Visited Nodes），未访问过(Not Visited Nodes)，以及还在递归栈中的（On Path Nodes）。
 
 [Animation of Graph DFS(Video)](https://www.youtube.com/watch?v=NUgMa5coCoE)
 
