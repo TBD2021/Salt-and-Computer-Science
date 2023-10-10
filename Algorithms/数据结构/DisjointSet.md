@@ -122,7 +122,7 @@ Time Complexity (Worst Case):
 |Operation|Tree Based Disjoint Set|Union by Rank/Size <br> without Path Compression|Union by Rank/Size <br> with Path Compression|
 |:---:|:---:|:---:|:---:|
 |Union( )|O(1)|O(1)|O(1)|
-|Find( )|O(n)|O(log n)|O(α(n))|
+|Find( )|O(n)|O(logn)|O(α(n))|
 
 > α函数为阿克曼函数（Ackermann function）的反函数。阿克曼函数A(n)增长极为迅速，做为其反函数的α(n)则增长极其缓慢，对于自然界中的绝大多数可能出现的数值n，其α(n)不超过5。
 
