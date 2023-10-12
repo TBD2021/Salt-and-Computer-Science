@@ -4,7 +4,7 @@
 - [岛屿问题/the Number of Islands](#岛屿问题)
 - [习题和参考资料](#习题和参考资料20230910)
 
-## 泛洪算法/Flood Fill Algorithms <a name="Flood_Fill"></a>
+## 泛洪算法(Flood Fill Algorithms) <a name="Flood_Fill"></a>
 
 Flood fill, is a flooding algorithm that determines and alters the area connected to a given node in a multi-dimensional array with some matching attribute.
 
@@ -17,7 +17,7 @@ Flood fill, is a flooding algorithm that determines and alters the area connecte
 |<img src="https://github.com/TBD2021/Salt-and-Computer-Science/blob/main/Algorithms/img/floodfill1_animation_stack.gif" width=200px>|<img src="https://github.com/TBD2021/Salt-and-Computer-Science/blob/main/Algorithms/img/floodfill1_animation_queue.gif" width=200px>|
 
 
-## 岛屿问题/the Number of Islands <a name="岛屿问题"></a>
+## 岛屿问题(the Number of Islands) <a name="岛屿问题"></a>
 
 **描述**
 
