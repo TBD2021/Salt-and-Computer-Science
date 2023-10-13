@@ -30,7 +30,7 @@
 - **数据结构**
   - [基础数据结构](Algorithms/数据结构/基础数据结构.md)
     - 树
-    - [图](Algorithms/数据结构/Graph.md)    
+    - 图    
 - **高级数据结构**
   - [并查集](Algorithms/数据结构/DisjointSet.md)
 
