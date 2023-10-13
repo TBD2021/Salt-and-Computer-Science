@@ -131,7 +131,7 @@ A Graph denoted by *G=(V, E)*, is a non-linear data structure defined by a finit
 
 ### DFS和BFS的遍历路径
 
-在DFS和BFS的遍历过程中，节点有3种标记状态：已访问过（Visited Nodes），未访问过(Not Visited Nodes)，以及还在递归栈中的（On Path Nodes）。
+在DFS和BFS的遍历过程中，节点有3种标记状态：已访问过（Visited Nodes），未访问过(Not Visited Nodes)，以及还在递归栈中的（Unfinished/ On Path Nodes）。
 
 [Animation of Graph DFS(Video)](https://www.youtube.com/watch?v=NUgMa5coCoE)
 
@@ -173,7 +173,7 @@ A Graph denoted by *G=(V, E)*, is a non-linear data structure defined by a finit
 
 **【算法-基于DFS】**
 
-如果一个图中有环，那么它一定有一条后向边(back edge)。 要检测后向边，就要对遍历过程进行tracking。前面提到，在DFS的遍历过程中，节点有3种标记状态：已访问过（Visited Nodes），未访问过（Un-Visited Nodes），以及还在递归栈中的（On Path Nodes/Unfinished Nodes）。 因此，如果在DFS的递归过程中，当前到达的节点还存在于递归栈中(On Path)，那么图中就存在环。
+如果一个图中有环，那么它一定有一条后向边(back edge)。 要检测后向边，就要对遍历过程进行tracking。前面提到，在DFS的遍历过程中，节点有3种标记状态：已访问过（Visited Nodes），未访问过（Not Visited Nodes），以及还在递归栈中的（Unfinished Nodes）。 因此，如果在DFS的递归过程中，当前到达的节点仍然还在于递归栈中，说明这个有向边指向了同一条路径中的过去访问过的节点，也就是说图中存在环。
 
 **【算法-基于BFS】**
 
@@ -202,15 +202,14 @@ A Graph denoted by *G=(V, E)*, is a non-linear data structure defined by a finit
 
 **【算法-基于DFS】**
 
-当到达一个节点时，并不立即输出这个节点，而是先递归地对该节点的所有邻接节点调用拓扑排序算法，然后将这个节点压入结果栈。当所有节点都访问过以后，将结果栈输出。
+当到达一个节点时，并不立即输出这个节点，而是先对该节点的所有相邻节点先递归地调用拓扑排序算法，然后将这个节点压入结果栈。当所有节点都访问过以后，将结果栈输出（拓扑排序中的节点顺序与他们从递归栈中出栈的顺序相反，因此需要额外创建一个结果栈来实现反序输出）。
 
-0. 创建一个栈来存放结果；创建一个数组来标记每个节点是Visited还是Not Visited，并初始化。
+0. 创建一个栈来存放结果；创建一个数组来标记每个节点是Visited还是Not Visited，并初始化。创建一个数组来标记每个节点是否在递归栈中。
 1. 从任意一个节点A开始，如果节点A是Visited，不用执行任何操作。如果节点A是Not Visited，将节点A放入递归栈中。 
-   1. 访问节点A的所有后继邻接节点。       
-      1. 如果这些邻接节点中有已经存在于递归栈中的节点，说明该DAG有环，不能进行拓扑排序。
-      2. 否则，从这些邻接节点中任意选择一个节点B，递归调用拓扑排序算法。
-      3. 重复，直到节点A的没有Not visited的后继邻接节点。
-   2. 当节点A没有Not Visited的后继邻接节点后，将节点A标记为Visited，并压入结果栈。
+   1. 访问节点A的所有相邻节点。       
+      1. 如果这些相邻节点中有存在于递归栈中的节点，说明该DAG有环，不能进行拓扑排序。
+      2. 否则，对A的所有相邻节点递归地调用拓扑排序算法，直到节点A的没有Not visited的相邻节点。
+   2. 将节点A标记为Visited，并压入结果栈。
 2. 重复步骤1，直到所有节点都是Visited，并被压入结果栈。
 3. 将结果栈输出。 
 
