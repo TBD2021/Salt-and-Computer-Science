@@ -29,14 +29,14 @@
 
 - **数据结构**
   - [基础数据结构](Algorithms/数据结构/基础数据结构.md)
-    - [树](Algorithms/数据结构/Tree.md)
+    - 树
     - [图](Algorithms/数据结构/Graph.md)    
 - **高级数据结构**
   - [并查集](Algorithms/数据结构/DisjointSet.md)
 
 - **算法**
   - 排序算法
-  - (图算法)[Algorithms/算法/图算法.md]
+  - [图算法](Algorithms/算法/图算法.md)
 
 #### 算法思想
 
