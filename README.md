@@ -31,14 +31,11 @@
       - O(nlogn)算法：快速排序、归并排序、堆排序
     - 非比较排序算法
   - [图算法](Algorithms/算法/图算法.md)
+  - 数组与矩阵
+  - 字符串匹配问题
+  - 位运算与数学算法
 
 - **算法思想**
-
-- **部分算法应用问题**
-
-- 数组与矩阵
-- **字符串匹配问题**
-- 位运算与数学算法
 
 - **古典问题**
   - [图搜索算法：DFS and BFS](Algorithms/InClassicProblems/图搜索算法：DFS&BFS.md)
@@ -47,17 +44,14 @@
   - [图搜索算法：拓扑排序](Algorithms/InClassicProblems/图搜索算法：拓扑排序.md)
     - 任务依赖性(Task Dependencies)
 
-#### 并行算法
-
->  - 并查集
->    - 岛屿问题的并行计算 
-
-#### Optional Topic
-
-- [Loop Invariant](https://www.cs.miami.edu/home/burt/learning/Math120.1/Notes/LoopInvar.html) 
 
 #### 练习
 
 - [算法题解](Algorithms/算法题解.md)
 
+#### 并行算法
+
+#### Optional Topic
+
+- [Loop Invariant](https://www.cs.miami.edu/home/burt/learning/Math120.1/Notes/LoopInvar.html) 
 
