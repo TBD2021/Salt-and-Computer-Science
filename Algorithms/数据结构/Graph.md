@@ -18,13 +18,11 @@
 - 图的表示
   - 邻接矩阵与邻接表
     - 对比：邻接矩阵与邻接表
-- 图搜索算法
+- 图搜索算法：DFS和BFS
   - 图的深度优先遍历：用栈存储次序信息
   - 图的宽度优先遍历：用队列存储次序信息
-  - 图搜索算法：DFS和BFS
-    - 概述
-    - DFS和BFS的遍历路径
-    - 对比：DFS和BFS
+  - DFS和BFS的遍历路径
+  - 对比：DFS和BFS
 - 环检测与拓扑排序
   - 有向图的环检测
   - 拓扑排序
@@ -101,8 +99,6 @@ A Graph denoted by *G=(V, E)*, is a non-linear data structure defined by a finit
 
 ## 图搜索算法：DFS和BFS
 
-- **概述**
-
 图搜索算法（或者说图遍历算法）(Graph Search (or Graph Traversal) Algorithms)，主要用于在图中进行搜索或者发现。它们会访问算法能够到达的所有节点，但是不会对搜索路径有优化需求。而路径规划算法(Pathfinding Algorithms)则用于在图中寻找给定的起点与终点之间符合特定要求的路径。
 
 图搜索算法包含深度优先搜索（Depth First Traversal, DFS）和宽度优先搜索(Breadth First Traversal, BFS)。DFS和BFS做为两个最基础的图搜索算法，通常是其他路径规划算法的基础部件。
@@ -130,7 +126,6 @@ A Graph denoted by *G=(V, E)*, is a non-linear data structure defined by a finit
 1. 从源节点开始，把源节点的所有相邻节点依次放入队列。
 2. 弹出一个节点，把该节点下的所有**没有进过队列**的相邻节点放入队列。
 3. 重复步骤1、2，直到队列变成空队列。
-
 
 ### DFS和BFS的遍历路径
 
