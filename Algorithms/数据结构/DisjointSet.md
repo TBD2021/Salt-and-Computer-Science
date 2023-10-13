@@ -130,4 +130,4 @@ Time Complexity (Worst Case):
 
 **习题**
 
-- [算法题解](算法题解/算法题解-DisjointSet.md)
+- [算法题解：Disjoint Set](../算法题解/算法题解-DisjointSet.md)
