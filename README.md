@@ -70,7 +70,7 @@
 
 #### Optional Topic
 
-     - Loop Invariant 
+     - [Loop Invariant](https://www.cs.miami.edu/home/burt/learning/Math120.1/Notes/LoopInvar.html) 
 
 #### 练习
 
