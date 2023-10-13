@@ -20,15 +20,15 @@
 
 ### 算法与数据结构<br>Algorithm and Data Structure
 
-#### 基础
+#### 算法分析
 
--
+- **算法与数据结构的构建**
   - [为什么需要算法](Algorithms/基础/为什么需要算法.md)
+  - 数据结构：数据的组织形式与存储形式
+
 - **算法分析**
   - 算法复杂度
-- **数据结构**
-  - 数据结构：数据的组织形式与存储形式
-    
+
 #### 数据结构
 
 - **基础数据结构**
@@ -52,16 +52,16 @@
     
 #### 部分算法应用问题
 
-- 古典问题
+- 数组与矩阵
+- **字符串匹配问题**
+- 位运算与数学算法
+
+- **古典问题**
   - [图搜索算法：DFS and BFS](Algorithms/InClassicProblems/图搜索算法：DFS&BFS.md)
     - 泛洪算法(Flood Fill Algorithm)
     - 岛屿问题(the Number of Islands)
   - [图搜索算法：拓扑排序](Algorithms/InClassicProblems/图搜索算法：拓扑排序.md)
     - 任务依赖性(Task Dependencies)
-- 数组与矩阵
-- 字符串处理
-- 位运算与数学算法
-
 
 #### 并行算法
 
