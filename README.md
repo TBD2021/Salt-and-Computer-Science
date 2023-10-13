@@ -27,11 +27,10 @@
   - 算法分析
     - 算法复杂度
 
-#### 数据结构
-
-- **基础数据结构**
-  - [树](Algorithms/数据结构/Tree.md)
-  - [图](Algorithms/数据结构/Graph.md)    
+- **数据结构**
+  - [基础数据结构](Algorithms/数据结构/基础数据结构.md)
+    - [树](Algorithms/数据结构/Tree.md)
+    - [图](Algorithms/数据结构/Graph.md)    
 - **高级数据结构**
   - [并查集](Algorithms/数据结构/DisjointSet.md)
 
