@@ -13,14 +13,12 @@
 - 基础概念
   - 图的定义
   - 图的类型
-    - 有向图与无向图
-    - 有权图与无权图
-    - 简单图与多重图
-    - 稠密图与稀疏图
-- 图的表示与底层实现
+    - 有向图与无向图；有权图与无权图；
+    - 简单图与多重图；稠密图与稀疏图
+- 图的表示
   - 邻接矩阵与邻接表
     - 对比：邻接矩阵与邻接表
-- 图的遍历和图搜索算法
+- 图搜索算法
   - 图的深度优先遍历：用栈存储次序信息
   - 图的宽度优先遍历：用队列存储次序信息
   - 图搜索算法：DFS和BFS
@@ -73,7 +71,7 @@ A Graph denoted by *G=(V, E)*, is a non-linear data structure defined by a finit
   - 稠密图(Dense Graph): A graph with many edges compared to the number of vertices.
   - 稀疏图(Sparse Graphs): A graph with relatively few edges compared to the number of vertices.
 
-## 图的表示与底层实现
+## 图的表示
 
 ### 邻接矩阵与邻接表
 
@@ -83,6 +81,7 @@ A Graph denoted by *G=(V, E)*, is a non-linear data structure defined by a finit
 
 <img src="https://github.com/TBD2021/Salt-and-Computer-Science/blob/main/Algorithms/img/Graph1.png" width=600px>
 
+在图的邻接表表示中，如果G是一个有向图，则所有链表的长度之和为 *|E|*；如果G是一个无向图，则所有链表的长度之和为*2|E|*。
 
 - **对比：邻接矩阵与邻接表**
 
@@ -97,44 +96,43 @@ A Graph denoted by *G=(V, E)*, is a non-linear data structure defined by a finit
 |Remove Edge|O(1)|O(V)|
 |判断已知位置的<br>两个节点是否邻接|O(1)|O(V)|
 
-结论:
+结论：
+- 大多数情况下，邻接表都优于邻接矩阵（不过，邻接表和邻接矩阵在渐进意义下至少是一样有效的）。这是因为稀疏图更适合使用用邻接表表示，但是当遇到稠密图或必须很快判断两个给定顶点是否存在连接边时，通常使用邻接矩阵。
 
-    - 大多数情况下，邻接表都优于邻接矩阵。
-    - 稀疏图适合用邻接表存储，稠密图适合用邻接矩阵存储。
+## 图搜索算法：DFS和BFS
 
-## 图的遍历和图搜索算法
+- **概述**
 
-### 深度优先遍历
+图搜索算法（或者说图遍历算法）(Graph Search (or Graph Traversal) Algorithms)，主要用于在图中进行搜索或者发现。它们会访问算法能够到达的所有节点，但是不会对搜索路径有优化需求。而路径规划算法(Pathfinding Algorithms)则用于在图中寻找给定的起点与终点之间符合特定要求的路径。
 
-图的深度优先遍历算法（Depth First Traversal, DFS）与树的DFS算法相近。关键的不同在于，由于图中可能有环，图的DFS算法需要记录一个节点是否已经被访问过（Visted/Not visted），以避免对一个节点反复访问。
+图搜索算法包含深度优先搜索（Depth First Traversal, DFS）和宽度优先搜索(Breadth First Traversal, BFS)。DFS和BFS做为两个最基础的图搜索算法，通常是其他路径规划算法的基础部件。
+
+### 深度优先搜索
+
+图的DFS算法与树的DFS算法相近，两者的关键不同在于，由于图中可能有环，图的DFS算法需要额外记录每个个节点是否已经被访问过（Visted/Not visted），以避免对某个节点的反复访问。
 
 图的DFS结果不唯一。
 
 **【算法-非递归实现】**
 
-1. 从源节点开始，把相邻节点依次放入栈。
-2. 弹出一个节点，把该节点下一个**没有进过栈**的邻接节点放入栈。
+0. 创建一个栈。
+1. 从源节点开始，把源节点的所有相邻节点依次放入栈。
+2. 弹出一个节点，把该节点下的所有**没有进过栈**的相邻节点放入栈。
 3. 重复步骤1、2，直到栈变成空栈。
 
-### 宽度优先遍历
+### 宽度优先搜索
 
-图的宽度优先遍历(Breadth First Traversal, BFS)算法与树的BFS算法相近。关键的不同在于，由于图中可能有环，图的BFS需要记录一个节点是否已经被访问过（Visted/Not visted），以避免对一个节点反复访问。
+图的BFS算法与树的BFS算法相近，两者的关键不同在于，由于图中可能有环，图的BFS算法需要额外记录每个节点是否已经被访问过（Visted/Not visted），以避免对某个节点的反复访问。
 
 **【算法-非递归实现】**
 
-1. 从源节点开始，把相邻节点依次放入队列。
-2. 弹出一个节点，把该节点下一个**没有进过队列**的邻接节点放入队列。
+0. 创建一个队列。
+1. 从源节点开始，把源节点的所有相邻节点依次放入队列。
+2. 弹出一个节点，把该节点下的所有**没有进过队列**的相邻节点放入队列。
 3. 重复步骤1、2，直到队列变成空队列。
 
-### 图搜索算法：DFS和BFS
 
-- **概述**
-
-图搜索算法（或者说图遍历算法）(Graph Search (or Graph Traversal) Algorithms)，主要用于在图中进行搜索或者发现。它们会访问所有算法能够到达的节点，但是不会对搜索路径有优化需求。而路径规划算法(Pathfinding Algorithms)则用于在图中寻找给定的起点与终点之间符合特定要求的路径。
-
-图搜索算法包含深度优先搜索DFS和宽度优先搜索BFS。深度优先搜索DFS是从给定的起点在图中做深度优先遍历，宽度优先搜索BFS是从给定的起点在图中做宽度优先遍历。DFS和BFS做为两个最基础的图搜索算法，通常是其他路径规划算法的基础部件。
-
-- **DFS和BFS的遍历路径**
+### DFS和BFS的遍历路径
 
 在DFS和BFS的遍历过程中，节点有3种标记状态：已访问过（Visited Nodes），未访问过(Not Visited Nodes)，以及还在递归栈中的（On Path Nodes）。
 
@@ -142,7 +140,7 @@ A Graph denoted by *G=(V, E)*, is a non-linear data structure defined by a finit
 
 [Animation of Graph BFS(Video)](https://www.youtube.com/watch?v=x-VTfcmrLEQ)
 
-- **对比：DFS和BFS**
+### 对比：DFS和BFS
 
 1. 正确性: 
     - 如果解存在，那么BFS一定能找到该解；而DFS不保证能找到该解。
@@ -162,8 +160,9 @@ A Graph denoted by *G=(V, E)*, is a non-linear data structure defined by a finit
 
 结论：
 
-    - 大多数情况下，用DFS可以节省时间、空间。
+    - 大多数情况下，DFS算法可以节省时间、空间开销。
     - 搜索的目标节点距离起点较近的情况，例如求最短路径，用BFS速度更快。
+    - DFS算法能够记录回溯信息。
 
 ## 有向图的环检测与拓扑排序
 
