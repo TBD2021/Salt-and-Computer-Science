@@ -44,14 +44,10 @@
   - [图搜索算法：拓扑排序](Algorithms/InClassicProblems/图搜索算法：拓扑排序.md)
     - 任务依赖性(Task Dependencies)
 
-
-#### 练习
+- **练习**
 
 - [算法题解](Algorithms/算法题解.md)
 
-#### 并行算法
-
-#### Optional Topic
-
-- [Loop Invariant](https://www.cs.miami.edu/home/burt/learning/Math120.1/Notes/LoopInvar.html) 
+- **Optional Topic**
+  - [Loop Invariant](https://www.cs.miami.edu/home/burt/learning/Math120.1/Notes/LoopInvar.html) 
 
