@@ -7,9 +7,10 @@
 ## Flood Fill Algorithms <a name ="Flood_Fill20230910">
 
 ### Flood Fill <a name ="LeetCode-733">
+
 [LeetCode-733. Flood Fill (Easy)](https://leetcode.com/problems/flood-fill/)
 
-**【解析】** 图的遍历，DFS，BFS都可以。
+**【解析】** 图的遍历，DFS、BFS都可以。
 
 ```Java
 //4-direction Flood Fill Method
@@ -47,9 +48,15 @@
 ## 岛屿问题/the Number of Islands <a name ="the_Number_of_Islands20230923">
 
 ### Number of Islands <a name ="LeetCode-200">
+
 [LeetCode-200. Number of Islands (Medium)](https://leetcode.com/problems/number-of-islands/)
 
-**【解析】** 每次用DFS/BFS遍历，将1个岛涂色。扫描整个矩阵，计数总共涂了几个岛。
+**【解析】** 
+
+方法1： 使用图的DFS/BFS算法。每次调用DFS/BFS遍历，将1个岛涂色。扫描整个矩阵，计数总共涂色了几个岛。
+方法2： 使用并查集。将每个岛上的所有地图格合并到一个集合中，计数总共有多少个集合。并查集解法可以进一步优化为并行算法，现将地图矩阵分割到多个CPU上进行统计，再将每个CPU得到的集合合并结果与地图分割边界上的元素信息重新归纳合并，得出最后的整体结果。
+
+**方法1：图的DFS/BFS算法** 
 
 ```Java
     public int rSize;   //row size
@@ -60,23 +67,18 @@
         rSize=grid.length;
         cSize=grid[0].length;
 
-        int i=0;
-        int j=0;
-        while(i<rSize){
-            while(j<cSize){
+       for (int i=0; i<rSize; i++){
+            for(int j=0;j<cSize;j++){
                 if(grid[i][j]=='1'){
                     dfsGraph(grid, i, j, '1','0');
                     res++;
                 }
-                j++;
             }
-            j=0;
-            i++;
         }
         return res;        
     }
 
-//Graph DFS, Recursive Implementation
+//Function: Graph DFS, Recursive Implementation
     public void dfsGraph(char[][]grid, int rNum, int cNum, char pre, char cur){
         if(rNum-1>=0&&grid[rNum-1][cNum]==pre){
             grid[rNum-1][cNum]=cur;
@@ -97,6 +99,3 @@
         return;
     }
 ```
-
-
-
