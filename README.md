@@ -14,27 +14,24 @@
 
 ### 算法与数据结构
 
-- **Charpt 1：算法分析**
+- **Chapter 1：算法分析**
   - [L1-Basics](Algorithms/算法分析/Basics.md)：为什么需要算法设计，数据的组织和存储
   - L2-算法分析：算法复杂度
+- **Chapter 2：排序算法**
+  - [L3-比较排序算法](Algorithms/算法/比较排序算法.md)：O(n<sup>2</sup>)算法-插入排序、选择排序、冒泡排序，O(nlogn)算法-快速排序、归并排序、堆排序
+  - L4-非比较排序算法
+- **Chapter 3：数据结构**
+  - L5-线性数据结构：数组，链表，栈和队列
+  - L6-Hash Table
+  - [L7-非线性数据结构](Algorithms/数据结构/非线性数据结构.md)：树，图
+- [**Chapter 4：图算法**](Algorithms/算法/图算法.md)
+  - [L8-图搜索算法](Algorithms/算法/图搜索算法.md)：图的 DFS/BFS 算法，拓扑排序（未完）
+- **Chapter 5：高级数据结构**
+  - [并查集](Algorithms/数据结构/高级数据结构.md)
 
-- **Chapter 2：数据结构**
-  - [L3-Linear Data Structures](Algorithms/数据结构/线性数据结构.md)：数组，链表，栈和队列
-  - [L4-Non Linear Data Structures](Algorithms/数据结构/非线性数据结构.md)：树，图
-    
-- **Chapter 3：排序算法**
 
-
-  - [高级数据结构](Algorithms/数据结构/高级数据结构.md)
-    - 并查集
-
-- **算法**
-  - [排序算法](Algorithms/算法/排序算法.md)
-    - 比较排序算法
-      - O(n<sup>2</sup>)算法：插入、选择、冒泡
-      - O(nlogn)算法：快速排序、归并排序、堆排序
-    - 非比较排序算法
-  - [图算法](Algorithms/算法/图算法.md)
+----------------------------------------------------------------------------
+<details><summary>乱七八糟的东西</summary>
   - 数组与矩阵
   - 字符串匹配问题
   - 位运算与数学算法
@@ -47,3 +44,4 @@
 - **Optional Topic**
   - [Loop Invariant](https://www.cs.miami.edu/home/burt/learning/Math120.1/Notes/LoopInvar.html) 
 
+</details>
