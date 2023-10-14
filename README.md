@@ -24,7 +24,7 @@
   - L5-线性数据结构：数组，链表，栈和队列
   - L6-Hash Table
   - [L7-非线性数据结构](Algorithms/数据结构/非线性数据结构.md)：树，图
-- [**Chapter 4：图算法**](Algorithms/算法/图算法.md)
+- **Chapter 4：图算法**
   - [L8-图搜索算法](Algorithms/算法/图搜索算法.md)：图的 DFS/BFS 算法，拓扑排序（未完）
 - **Chapter 5：高级数据结构**
   - [并查集](Algorithms/数据结构/高级数据结构.md)
