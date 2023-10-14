@@ -8,8 +8,6 @@
 
 **"A doomed sailor is shipwrecked on an uncharted island. Upgrade skills, find a handy weapon, claim sanctuaries and walkthough the mystery to face the bosses."**
 
-
-
 ## Salt
 
 ### 算法与数据结构
@@ -29,11 +27,12 @@
 - **Chapter 5：高级数据结构**
   - [并查集](Algorithms/数据结构/并查集.md)
 
-
+- **Chapter 6: 算法研究问题选编**
+  - [字符串匹配] 
 ----------------------------------------------------------------------------
 <details><summary>乱七八糟的东西</summary>
   - 数组与矩阵
-  - 字符串匹配问题
+ 
   - 位运算与数学算法
 
 - **算法思想**
