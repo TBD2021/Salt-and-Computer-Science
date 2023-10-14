@@ -1,10 +1,12 @@
+<div align="center">
+<img src="https://github.com/TBD2021/Salt-and-Computer-Science/blob/main/Algorithms/img/SaltAndSanctuary1.png" width=800px>
+</div>
+
 # Salt and Computer Science
 
 ## Shipwrecked
 
-<img src="https://github.com/TBD2021/Salt-and-Computer-Science/blob/main/Algorithms/img/SaltAndSanctuary1.png" width=800px align=center>
 
-<br>
 
 **"A doomed sailor is shipwrecked on an uncharted island. Upgrade skills, find a handy weapon, claim sanctuaries and walkthough the mystery to face the bosses."**
 
