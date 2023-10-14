@@ -1,25 +1,28 @@
+# Salt and Computer Science
+
 <div align="center">
 <img src="https://github.com/TBD2021/Salt-and-Computer-Science/blob/main/Algorithms/img/SaltAndSanctuary1.png" width=800px>
 </div>
 
-# Salt and Computer Science
-
-## Shipwrecked
-
-
+<br>
 
 **"A doomed sailor is shipwrecked on an uncharted island. Upgrade skills, find a handy weapon, claim sanctuaries and walkthough the mystery to face the bosses."**
 
-<br>
+
 
 ## Salt
 
-### 算法与数据结构<br>Algorithm and Data Structure
+### 算法与数据结构
+
+- **Charpt 1：算法分析**
+  - [L1: Basics](Algorithms/算法分析/Basics.md)
+    
+    *Topics: 1. 为什么需要算法；2. 数据的组织和存储* 
 
 - **算法分析**
   - [算法与数据结构的构建](Algorithms/算法分析/算法与数据结构的构建.md)
     - 为什么需要算法
-    - 数据结构：数据的组织形式与存储形式(未完成)
+    - 数据的组织与存储(未完成)
   - 算法分析
     - 算法复杂度
 
