@@ -15,19 +15,15 @@
 ### 算法与数据结构
 
 - **Charpt 1：算法分析**
-  - [L1: Basics](Algorithms/算法分析/Basics.md)
-    
-    *Topics: 1. 为什么需要算法设计；2. 数据的组织和存储* 
+  - [L1-Basics](Algorithms/算法分析/Basics.md)：为什么需要算法设计，数据的组织和存储
+  - L2-算法分析：算法复杂度
 
-- **算法分析**
+- **Chapter2：数据结构**
+  - [L3-Linear Data Structures](Algorithms/数据结构/线性数据结构.md)：数组，链表，栈和队列
+  - [L4-Non Linear Data Structures](Algorithms/数据结构/非线性数据结构.md)：树，图
 
-  - 算法分析
-    - 算法复杂度
 
-- **数据结构**
-  - [基础数据结构](Algorithms/数据结构/基础数据结构.md)
-    - 树
-    - 图    
+
   - [高级数据结构](Algorithms/数据结构/高级数据结构.md)
     - 并查集
 
