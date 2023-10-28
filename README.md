@@ -28,7 +28,11 @@
   - [并查集](Algorithms/数据结构/并查集.md)
 
 - **Chapter 6：算法研究问题选编**
-  - [字符串匹配算法](Algorithms/算法/字符串匹配算法.md) 
+  - [字符串匹配算法](Algorithms/算法/字符串匹配算法.md)
+  
+- **练习**
+  - [算法题解](Algorithms/算法题解.md)
+
 ----------------------------------------------------------------------------
 <details><summary>乱七八糟的东西</summary>
   - 数组与矩阵
@@ -37,8 +41,6 @@
 
 - **算法思想**
 
-- **练习**
-  - [算法题解](Algorithms/算法题解.md)
 
 - **Optional Topic**
   - [Loop Invariant](https://www.cs.miami.edu/home/burt/learning/Math120.1/Notes/LoopInvar.html) 
