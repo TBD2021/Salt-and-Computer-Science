@@ -13,7 +13,7 @@
 ### 算法与数据结构
 
 - **Chapter 1：算法分析**
-  - [L1-Basics](Algorithms/算法分析/Basics.md)：为什么需要算法设计，数据的组织和存储
+  - [L1-Basics](Algorithms/算法分析/Basics.md)：Problems，Algorithms，Programs，数据的组织和存储
   - [L2-算法分析](Algorithms/算法分析/算法分析.md)：渐进分析
 - **Chapter 2：排序算法**
   - [L3-比较排序算法](Algorithms/算法/比较排序算法.md)：插入排序、选择排序、冒泡排序，快速排序、归并排序、堆排序
