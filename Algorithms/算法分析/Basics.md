@@ -40,7 +40,7 @@ A problem can be solved by many different algorithms. A given algorithm solves o
 
 We often think of a computer program as an instance, or concrete representation, of an algorithm in some programming language. Algorithms are usually presented in terms of programs, or parts of programs. Naturally, there are many programs that are instances of the same algorithm, because any modern computer programming language can be used to implement the same collection of algorithms
 
-对一个计算机程序的评估是多方面的，除了正确性，还有性能（performance）、对计算机资源的利用效率（resource usage）、代码可读性、可扩展性、用户交互等多个方面。而好的算法设计能够使计算机程序在其中的多个方面获益。
+对一个计算机程序的评估是多方面的，除了正确性以外，还有性能（performance）、计算机资源的利用效率（resource usage）、代码可读性、程序可扩展性、用户交互等多个方面。而好的算法设计能够使计算机程序在其中的多个方面获益。
 
 ## 数据的组织与存储
 
