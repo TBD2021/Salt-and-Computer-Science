@@ -13,7 +13,7 @@
 ### 算法与数据结构
 
 - **Chapter 1：算法分析**
-  - [L1-Basics](Algorithms/算法分析/Basics.md)：Problems，Algorithms，Programs，数据的组织和存储
+  - [L1-Basics](Algorithms/算法分析/Basics.md)：Problems，Algorithms，Programs；数据的组织和存储
   - [L2-算法分析](Algorithms/算法分析/算法分析.md)：渐进分析
 - **Chapter 2：排序算法**
   - [L3-比较排序算法](Algorithms/算法/比较排序算法.md)：插入排序、选择排序、冒泡排序，快速排序、归并排序、堆排序
@@ -30,9 +30,11 @@
 - **Chapter 6：算法研究问题选编**
   - [字符串匹配算法](Algorithms/算法/字符串匹配算法.md)
   
-- **练习**
+- **习题与参考资料**
+  **习题** 
   - [算法题解](Algorithms/算法题解.md)
-
+  **参考资料**
+  - [CS3 Data Structures & Algorithms](https://opendsa-server.cs.vt.edu/ODSA/Books/CS3/html/index.html)
 ----------------------------------------------------------------------------
 <details><summary>乱七八糟的东西</summary>
   - 数组与矩阵
