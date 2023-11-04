@@ -25,16 +25,6 @@ A problem can be solved by many different algorithms. A given algorithm solves o
 
 - 正确（Correct）: 算法应当把每一个输入都转化为正确的输出。
 - 由具体的（concrete）、无歧义的（no ambiguity）、有限（finite）的步骤组成，并具有终止(terminate)步骤。
-  
-```html
-- Concrete means that the action described by that step is completely understood — and doable — by the person or machine that must perform the algorithm. Each step must also be doable in a finite amount of time. 
-
-- There can be no ambiguity as to which step will be performed next. 
-
-- It must be composed of a finite number of steps.
-
-- It must terminate. In other words, it may not go into an infinite loop.
-```
 
 ### Programs
 
