@@ -12,6 +12,8 @@
 
 ### 算法与数据结构
 
+<details><summary>目录</summary>
+  
 - **Chapter 1：算法分析**
   - [L1-Basics](Algorithms/算法分析/Basics.md)：Problems，Algorithms，Programs；数据的组织和存储
   - [L2-算法分析](Algorithms/算法分析/算法分析.md)：渐进分析
@@ -39,6 +41,8 @@
     
   **参考资料**
   - [CS3 Data Structures & Algorithms](https://opendsa-server.cs.vt.edu/ODSA/Books/CS3/html/index.html)
+ 
+
 ----------------------------------------------------------------------------
 <details><summary>乱七八糟的东西</summary>
   - 数组与矩阵
@@ -50,5 +54,7 @@
 
 - **Optional Topic**
   - [Loop Invariant](https://www.cs.miami.edu/home/burt/learning/Math120.1/Notes/LoopInvar.html) 
+
+</details>
 
 </details>
