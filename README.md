@@ -24,6 +24,7 @@
   - L5-数组，链表，栈和队列
   - L6-Hash Table
   - [L7-树，图](Algorithms/数据结构/树&图.md)
+  - [L8-双端队列](Algorithms/数据结构/双端队列.md)
 - **Chapter 4：图算法**
   - [L8-图搜索算法](Algorithms/算法/图搜索算法.md)：图的 DFS/BFS 算法，拓扑排序（未完）
 - **Chapter 5：高级数据结构**
