@@ -30,11 +30,10 @@
 - **Chapter 5：高级数据结构**
   - [并查集](Algorithms/数据结构/并查集.md)
 - **Chapter 6：算法思想与算法技巧**
-
+  - [滑动窗口](Algorithms/算法/滑动窗口.md)
 - **Chapter 7: 算法研究问题选编**
   - [字符串匹配](Algorithms/算法/字符串匹配算法.md)
   - [最长回文子串](Algorithms/算法/最长回文子串.md)
-  - [滑动窗口](Algorithms/算法/滑动窗口.md)
   
 - **习题与参考资料**
   
