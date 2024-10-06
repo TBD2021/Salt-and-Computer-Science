@@ -67,6 +67,6 @@
 
 <details><summary>目录</summary>
   
-- **Chapter 1：Internet**
+- **Chapter 1：Network layer**
 
 </details>
