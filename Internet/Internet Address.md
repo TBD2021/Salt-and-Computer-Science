@@ -2,10 +2,11 @@
 
 **Topics:**
 
-- 概述
+- Internet Address
 
-## 概述
+## Internet Address
 
+每个联入互联网的计算机都需要有一个独一无二的地址。Internet addresses的格式是 nnn.nnn.nnn.nnn ，这里 nnn 必须是一个0~255之间的数字，这个地址就是所谓的IP地址（IP指 “Internet Protocol，互联网协议” ）。
 
 
 <!--
