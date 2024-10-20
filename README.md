@@ -35,7 +35,6 @@
   - [字符串匹配](Algorithms/算法/字符串匹配算法.md)
   - [最长回文子串](Algorithms/算法/最长回文子串.md)
   
-
 - **习题与参考资料**
 <details><summary></summary>
   
@@ -44,10 +43,12 @@
     
   **参考资料**
   - [CS3 Data Structures & Algorithms](https://opendsa-server.cs.vt.edu/ODSA/Books/CS3/html/index.html)
+    
 </details> 
 
 ----------------------------------------------------------------------------
-<details><summary>乱七八糟的东西</summary>
+- **乱七八糟的东西**
+<details><summary></summary>
   - 数组与矩阵 
   - 位运算与数学算法
 
