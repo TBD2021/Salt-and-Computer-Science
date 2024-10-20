@@ -12,7 +12,7 @@
 
 ### 算法与数据结构
 
-<details><summary>目录</summary>
+<summary>目录</summary>
   
 - **Chapter 1：算法分析**
   - [L1 - Basics](Algorithms/算法分析/Basics.md)：Problems，Algorithms，Programs；数据的组织和存储
@@ -58,7 +58,7 @@
 
 </details>
 
-</details>
+
 
 
 ## Potato
