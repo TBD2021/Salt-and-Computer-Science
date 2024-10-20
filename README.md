@@ -68,9 +68,9 @@
 ### 计算机网络
 
 - **Chapter 1：Network layer**
-  - [L1 - Internet Address](Internet/Internet_Address.md)
-  - [L1 - Internet Address](Internet/Internet Address.md)：IP Address, the "Ping" Program...
- 
+  - [L1 - Internet Address](Internet/Internet_Address.md)：IP Address, the "Ping" Program
+
+  
 
 
 
