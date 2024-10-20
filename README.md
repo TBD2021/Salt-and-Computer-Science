@@ -35,9 +35,9 @@
   - [字符串匹配](Algorithms/算法/字符串匹配算法.md)
   - [最长回文子串](Algorithms/算法/最长回文子串.md)
   
-- **习题与参考资料**
 
-<details>
+
+<details><summary>- **习题与参考资料**</summary>
   
   **习题** 
   - [算法题解](Algorithms/算法题解.md)
