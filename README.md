@@ -36,8 +36,8 @@
   - [最长回文子串](Algorithms/算法/最长回文子串.md)
   
 
-
-<details><summary>- **习题与参考资料**</summary>
+- **习题与参考资料**
+<details><summary></summary>
   
   **习题** 
   - [算法题解](Algorithms/算法题解.md)
