@@ -36,13 +36,15 @@
   - [最长回文子串](Algorithms/算法/最长回文子串.md)
   
 - **习题与参考资料**
+
+<details>
   
   **习题** 
   - [算法题解](Algorithms/算法题解.md)
     
   **参考资料**
   - [CS3 Data Structures & Algorithms](https://opendsa-server.cs.vt.edu/ODSA/Books/CS3/html/index.html)
- 
+</details> 
 
 ----------------------------------------------------------------------------
 <details><summary>乱七八糟的东西</summary>
