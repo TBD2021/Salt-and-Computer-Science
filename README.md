@@ -48,19 +48,15 @@
 
 ----------------------------------------------------------------------------
 <details><summary>乱七八糟的东西</summary>
-  - 数组与矩阵
- 
+  - 数组与矩阵 
   - 位运算与数学算法
 
 - **算法思想**
-
 
 - **Optional Topic**
   - [Loop Invariant](https://www.cs.miami.edu/home/burt/learning/Math120.1/Notes/LoopInvar.html) 
 
 </details>
-
-
 
 
 ## Potato
