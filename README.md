@@ -63,7 +63,7 @@
 
 ## Potato
 
-### Network
+### 计算机网络
 
 <details><summary>目录</summary>
   
