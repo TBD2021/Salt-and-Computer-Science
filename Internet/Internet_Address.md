@@ -3,6 +3,7 @@
 **Topics:**
 
 - Internet Address
+- the "Ping" Program
 
 ## Internet Address
 
@@ -11,6 +12,11 @@
 - If you connect to the Internet through an Internet Service Provider (ISP), you are usually assigned a temporary IP address for the duration of your dial-in session.
 - If you connect to the Internet from a local area network (LAN) your computer might have a permanent IP address or it might obtain a temporary one from a DHCP (Dynamic Host Configuration Protocol) server. 
 
+## the "Ping" Program
+
+"Ping"程序用于查看一个网络上的计算机是否alive。
+
+- 例：
 
 <!--
 **字符串匹配问题**
