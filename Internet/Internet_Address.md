@@ -21,4 +21,4 @@ The "Ping" program is to see if a computer on the Internet is alive. The ping pr
 **【例-Windows操作系统下使用Ping程序】**
 
 0. 打开cmd程序。
-1. 输入"ping www.yahoo.com"。
+1. 输入`ping www.yahoo.com`。
