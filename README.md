@@ -68,7 +68,7 @@
 ### 计算机网络
 
 - **Chapter 1：Network layer**
-  - [L1 - Internet Address, Protocol Stacks and Packets](Internet/Internet_Address.md)：IP Address, the "Ping" Program, Protocol Stacks and Packets
+  - [L1 - Internet Address, Protocol Stacks and Packets](Internet/Internet_Address.md)：IP Address, Protocol Stacks and Packets
 
   
 
