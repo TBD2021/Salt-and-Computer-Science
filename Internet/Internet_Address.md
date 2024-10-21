@@ -22,3 +22,17 @@ The "Ping" program is to see if a computer on the Internet is alive. The ping pr
 
 0. 打开cmd程序。
 1. 输入`ping www.yahoo.com`。
+
+## 协议栈和数据包（Protocol Stacks and Packets）
+
+计算机网络上的终端计算机如果想要互相发送信息，是如何将字符内容转换为电信号通过计算机网络传递到目标终端，然后再被解读出来的呢？这个过程是通过协议栈（Protocal Stack）实现的。这个协议栈就是TCP/IP协议（主要由TCP协议、IP协议两个通信协议构成），如下表所示
+| Protocol Layer| Comments |
+| ----------- | ----------- |
+| Application Protocols Layer| Protocols specific to applications such as WWW, e-mail, FTP, etc.       |
+| Transmission Control Protocol Layer   | TCP directs packets to a specific application on a computer using a port number.        |
+| Internet Protocol Layer   | IP directs packets to a specific computer using an IP address.        |
+| Hardware Layer   | Converts binary packet data to network signals and back.(E.g. ethernet network card, modem for phone lines, etc.)        |
+
+
+
+
