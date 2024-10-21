@@ -31,7 +31,10 @@ The "Ping" program is to see if a computer on the Internet is alive. The ping pr
 | Application Protocols Layer| Protocols specific to applications such as WWW, e-mail, FTP, etc.       |
 | Transmission Control Protocol Layer   | TCP directs packets to a specific application on a computer using a port number.        |
 | Internet Protocol Layer   | IP directs packets to a specific computer using an IP address.        |
-| Hardware Layer   | Converts binary packet data to network signals and back.(E.g. ethernet network card, modem for phone lines, etc.)        |
+| Hardware Layer   | Converts binary packet data to network signals and back.(E.g. ethernet network card, modem for phone lines, etc.)  |
+
+If we were to follow the path that the message "Hello computer 5.6.7.8!" took from our computer(IP address is 1.2.3.4) to the computer with IP address 5.6.7.8, it would happen something like this:
+
 
 
 
