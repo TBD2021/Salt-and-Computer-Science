@@ -36,7 +36,7 @@ The "Ping" program is to see if a computer on the Internet is alive. The ping pr
 If we were to follow the path that the message "Hello computer 5.6.7.8!" took from our computer(IP address is 1.2.3.4) to the computer with IP address 5.6.7.8, it would happen something like this:
 
 <div align="center">
-<img src="https://github.com/TBD2021/Salt-and-Computer-Science/blob/main/Internet/img/TCPIPLayer.png" width=400px>
+<img src="https://github.com/TBD2021/Salt-and-Computer-Science/blob/main/Internet/img/TCPIPLayer.png" width=380px>
 </div>
 
 
