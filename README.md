@@ -68,7 +68,7 @@
 ### 计算机网络
 
 - **Chapter 1：Network layer**
-  - [L1 - Internet Address, Protocol Stacks and Packets, Networking Infrastructure](Internet/Internet_Address.md)：IP Address, Protocol Stacks and Packets, Networking Infrastructure
+  - [L1 - 寻址](Internet/Internet_Address.md)：IP Address, Protocol Stacks and Packets, Networking Infrastructure
 
   
 
