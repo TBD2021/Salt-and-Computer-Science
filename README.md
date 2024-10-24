@@ -78,5 +78,6 @@
 ### 数据库
 
 - **Chapter X：Test Tools**
+  - [Apifox](https://apifox.com/)：Apifox 是API 文档、调试、Mock、测试一体化协作平台，定位 Postman + Swagger + Mock + JMeter 。通过一套系统、一份数据，解决多个系统之间的数据同步问题。
   - [Navicat](https://www.navicat.com.cn/manual/online_manual/cn/navicat_16/win_manual/#/about_0)：“Navicat”是一套可创建多个连接的数据库管理工具，用以方便管理 MySQL、Oracle、PostgreSQL、SQLite、SQL Server、MariaDB、MongoDB 和/或 Redis 等不同类型的数据库，并支持管理某些云数据库，例如阿里云、腾讯云。
 
